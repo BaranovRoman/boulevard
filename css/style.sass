@@ -1,0 +1,370 @@
+body
+    margin: 0
+    padding: 0
+.section
+    text-align: center
+.menu
+    position: fixed
+    top: 54px
+    left: 552px
+    z-index: 1
+    li
+        display: inline-block
+        padding-right: 46px
+    &__link
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+        color: #ffffff
+        font-family: "Ubuntu"
+        font-size: 18px
+        font-weight: 500
+        text-decoration: none
+        padding: 7px 12px 8px 12px
+        &:hover
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+            color: #e2007c
+            font-family: "Ubuntu"
+            font-size: 18px
+            font-weight: 500
+            border-radius: 18px
+            background-color: #000000
+            padding: 7px 12px 8px 12px
+            text-decoration: none
+            transition: all 0.35s
+.wrapper
+    width: 755px
+    height: 100%
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%)
+    position: fixed
+    &-2
+        width: 100%
+        height: 246px
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%)
+        position: fixed
+    &-3
+        width: 100vw
+        height: 100vh
+        background: rgba(0,0,0,0.6)
+.wrapper-mini
+    width: 84px
+    height: 100%
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%)
+    position: fixed
+    &-2
+        width: 100%
+        height: 146px
+        background-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%)
+        position: fixed
+.sport
+    background: url('../img/sport.jpg') 100% 100% no-repeat
+    background-size: cover
+.bowling
+    background: url('../img/bowling.jpg') 100% 100% no-repeat
+    background-size: cover
+.fog
+    background: url('../img/fog.jpg') 100% 100% no-repeat
+    background-size: cover
+.logo-md
+    display: none
+    position: fixed
+    top: 45px  
+    left: 122px
+    text-align: center
+    transition: all 0s
+.logo-lg
+    display: block
+    position: absolute
+    top: 35px
+    left: 830px
+    text-align: center
+    z-index: 1
+    transition: ease 0.05s
+.menu-md
+    display: none
+    transition: ease 0.05s
+.phone
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+    color: #ffffff
+    font-family: Ubuntu
+    font-size: 18px
+    font-weight: 700
+    display: flex
+    &-icon
+        background: url('../img/icons/phone.png') center no-repeat
+        width: 16px
+        height: 21px
+        display: inline-block
+        padding-right: 10px
+        transform: translateY(6px)
+.links
+    position: fixed
+    top: 65px
+    right: 200px
+.social
+    padding-top: 24px
+    display: flex
+    justify-content: flex-end
+.vk
+    background: url('../img/icons/vk.png') center no-repeat
+    width: 36px
+    height: 22px
+    padding-right: 22px
+    display: flex
+    transform: translateY(2px)
+.inst
+    background: url('../img/icons/inst.png') center no-repeat
+    width: 26px
+    height: 26px
+    display: flex
+.hamburger
+    position: fixed
+    top: 65px
+    right: 99px
+.form
+    display: none
+    position: fixed
+    bottom: 78px
+    left: 1414px
+    width: 443px
+    height: 336px
+    border-radius: 7px
+    background-color: rgba(#000000, 0.5)
+    transition: all 2s
+    form
+        padding-top: 22px
+        text-align: left
+        margin-left: 42px
+    &__label
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 16px
+        line-height: 22px
+        padding-top: 16px
+    &__input
+        width: 360px
+        height: 48px
+        border-radius: 5px
+        background-color: rgba(255, 255, 255, 0.6)
+        border: 0px
+        outline: none
+        font-size: 22px
+        margin-top: 6px
+        margin-bottom: 6px
+    &__agree
+        width: 138px
+        height: 45px
+        opacity: 0.5
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 10px
+        line-height: 16px 
+        transform: translate(10px,-12px) 
+        &-check
+            opacity: 0.5
+            color: #ffffff
+            transform: translateY(-22px)
+    &-flex
+        display: flex
+        flex-direction: row
+        padding-top: 37px
+    &__button
+        width: 172px
+        height: 48px
+        transform: translateX(30px)
+.button
+    color: #ffffff
+    font-family: "Ubuntu"
+    font-size: 16px
+    font-weight: 300
+    line-height: 18px
+    border-radius: 3px
+    background-color: #e2007c
+    border: 0px
+    &-ticket
+        width: 172px
+        height: 48px
+        margin-left: 132px
+.slide
+    text-align: left
+    &-menu
+        padding-left: 135px
+        padding-top: 495px
+        &__up
+            padding-left: 135px
+            padding-top: 215px
+        &__item
+            display: inline-block
+            padding-right: 46px
+            color: #ffffff
+            font-family: Ubuntu
+            font-size: 24px
+            text-decoration: underline
+            a
+                color: #fff
+    &-title
+        padding-left: 127px
+        position: relative
+        margin-top: 96px
+        color: #ffffff
+        font-family: "Ubuntu"
+        font-size: 126px
+        font-weight: 500
+        line-height: 47px
+        margin-bottom: 44px
+        &__up
+            padding-left: 127px
+            color: #ffffff
+            font-family: "Ubuntu"
+            font-size: 76px
+            margin-top: 58px
+            font-weight: 500
+            line-height: 47px
+            margin-bottom: 38px
+    &-subtitle
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 24px
+        line-height: 24px
+        padding-left: 135px
+    &-description
+        padding-left: 135px
+        padding-top: 20px
+        width: 656px
+        height: 71px
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 16px
+        line-height: 24px
+.slides-main
+    display: flex
+    text-align: left
+    &-1
+        flex: 0 0 20%
+        align-items: flex-end
+        background: url('../img/sport.jpg') center no-repeat
+        background-size: cover
+        height: 100vh
+        transition: all 0.5s
+    &-2
+        flex: 0 0 20%
+        align-items: flex-end
+        background: url('../img/bowling.jpg') center no-repeat
+        background-size: cover
+        height: 100vh
+        transition: all 0.5s
+    &-3
+        flex: 0 0 20%
+        align-items: flex-end
+        background: url('../img/karaoke.jpg') left no-repeat
+        background-size: cover
+        height: 100vh
+        transition: all 0.5s
+    &-4
+        flex: 0 0 20%
+        align-items: flex-end
+        background: url('../img/resto.jpg') center no-repeat
+        background-size: cover
+        height: 100vh
+        transition: all 0.5s
+    &-5
+        flex: 0 0 20%
+        align-items: flex-end
+        background: url('../img/fog.jpg') center no-repeat
+        background-size: cover
+        height: 100vh
+        transition: all 0.5s
+    &__title
+        color: #ffffff
+        font-family: "Ubuntu"
+        font-size: 36px
+        font-weight: 500
+        line-height: 47px
+        margin-top: 680px
+        padding-left: 62px
+    &__subtitle
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 16px
+        line-height: 24px
+        padding-left: 62px
+        width: 261px
+    &__arrow
+        padding-left: 62px
+input[type="checkbox"] + span
+    background: url('../img/icons/checkbox.png') no-repeat
+    &:checked
+        background: url('../img/icons/checkbox__checked.png') no-repeat
+.news
+    display: flex
+    justify-content: flex-start
+    padding-left: 135px
+    &-item
+        padding-right: 69px
+        &__title
+            width: 322px
+            height: auto
+            color: #ffffff
+            font-family: Ubuntu
+            font-size: 24px
+            line-height: 29px
+            padding-bottom: 28px
+            margin-top: 28px
+            margin-bottom: 0
+        &__description
+            width: 322px
+            height: 71px
+            color: #ffffff
+            font-family: Ubuntu
+            font-size: 16px
+            line-height: 24px
+            margin-top: 0
+        &__img
+            padding-top: 24px
+.schedule-description
+    width: 734px
+    height: 24px
+    color: #ffffff
+    font-family: Ubuntu
+    font-size: 20px
+    line-height: 24px
+    padding-left: 132px
+.table
+    padding-left: 132px
+    padding-top: 41px
+    th
+        padding-top: 31px
+        padding-bottom: 31px
+        width: 93px
+        height: 19px
+        color: #ffffff
+        font-family: "Ubuntu"
+        font-style: italic
+        font-size: 16px
+        font-weight: 300
+    td
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 16px
+        line-height: 24px
+        padding-right: 30px
+        width: 116px
+        padding-top: 15px
+        padding-bottom: 15px
+        padding-left: 20px
+    &-row
+        &__high
+            height: 76px
+        &__white
+            background-color: rgba(#e7e7e7, 0.2)
+            z-index: 0
+.gallery
+    padding-top: 23px
+    padding-left: 133px
+    &-item
+        padding-bottom: 40px
+        &__img
+            width: 286px
+            height: 160px
+.links-norm
+    color: #ffffff
+    text-decoration: none

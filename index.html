@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<ul id="menu" class="menu">
+		<div class="logo-md">
+			<img src="img/icons/logo-md.png" alt="Бульвар">
+		</div>
+		<div class="menu-md">
+				<li data-menuanchor="#1page"><a href="#1page" class="menu__link">Спорт-бар</a></li>
+				<li data-menuanchor="#2page"><a href="#2page" class="menu__link">Боулинг</a></li>
+				<li data-menuanchor="#3page"><a href="#3page" class="menu__link">Караоке</a></li>
+				<li data-menuanchor="#4page"><a href="#4page" class="menu__link">Ресторан "Веранда"</a></li>
+				<li data-menuanchor="#5page"><a href="#5page" class="menu__link">Бар "Туман"</a></li>
+		</div>
+		<div class="links">
+			<div class="phone">
+				<a href="tel:+73912300040" class="links-norm">
+					<div class="phone-icon"></div>
+				+7 391 230-00-40
+				</a>
+			</div>
+			<div class="social">
+				<a href="https://vk.com/club23129858"><div class="vk"></div></a>
+				<a href="https://www.instagram.com/bulvar_rest/"><div class="inst"></div></a>
+			</div>
+			<div class="hamburger">
+				<img src="img/icons/menu.png" alt="Меню">
+			</div>
+		</div>
+		<div class="form">
+				<form action="#">
+					<label for="name" class="form__label">Ваше имя</label><br>
+					<input type="text" name="name" id="name" class="form__input"><br>
+					<label for="phone" class="form__label">Номер телефона *</label><br>
+					<input type="text" name="phone" id="phone" class="form__input"><br>
+					<div class="form-flex">
+						<input type="checkbox" class="form__agree-check" checked="checked">
+						<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+						<button class="button form__button">
+							Забронировать
+						</button>
+					</div>
+				</form>
+			</div>
+	</ul>	
+	<div id="fullpage">
+		<div class="section" id="section0">
+				<div class="logo-lg">
+					<img src="img/icons/logo-lg.png" alt="Бульвар">
+				</div>
+				
+				<div class="slides-main">
+					<div class="slides-main-1">
+							<div class="wrapper-mini"></div>
+							<div class="wrapper-mini-2"></div>
+						<a href="#section1" class="links-norm">
+							<h3 class="slides-main__title">Спорт-бар</h3>
+							<p class="slides-main__subtitle">Прямые трансляции актуальных спортивных событий под кружку пенного</p>
+							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						</a>
+					</div>
+					<div class="slides-main-2">
+							<div class="wrapper-mini"></div>
+							<div class="wrapper-mini-2"></div>
+						<a href="#section2" class="links-norm">
+							<h3 class="slides-main__title">Боулинг</h3>
+							<p class="slides-main__subtitle">Единственный в центре города боулинг с восемью дорожками</p>
+							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						</a>
+					</div>
+					<div class="slides-main-3">
+						<div class="wrapper-mini"></div>
+						<div class="wrapper-mini-2"></div>
+						<a href="#section3" class="links-norm">	
+							<h3 class="slides-main__title">Караоке</h3>
+							<p class="slides-main__subtitle">Те, у кого есть желание и тяга к пению, смогут показать свой талант</p>
+							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						</a>
+					</div>
+					<div class="slides-main-4">
+						<div class="wrapper-mini"></div>
+						<div class="wrapper-mini-2"></div>
+						<a href="#section4" class="links-norm">
+							<h3 class="slides-main__title">Ресторан <br> «Веранда»</h3>
+							<p class="slides-main__subtitle">Для спокойного семейного ужина и делового обеда</p>
+							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						</a>
+					</div>
+					<div class="slides-main-5">
+						<div class="wrapper-mini"></div>
+						<div class="wrapper-mini-2"></div>
+						<a href="#section5" class="links-norm">
+							<h3 class="slides-main__title">Бар «Туман»</h3>
+							<p class="slides-main__subtitle">Молодым у нас всегда дорога в бар</p>
+							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						</a>
+					</div>
+				</div>
+				
+
+		</div>
+
+		<div class="section sport" id="section1">
+			<div class="wrapper"></div>
+			<div class="wrapper-2"></div>
+			<div class="slide" data-anchor="slide1">
+				
+				<div class="slide-content">
+					<ul class="slide-menu">
+						<li class="slide-menu__item"><a href="#">Новости и акции</a></li>
+						<li class="slide-menu__item"><a href="#">Меню</a></li>
+						<li class="slide-menu__item"><a href="#">Трансляции</a></li>
+					</ul>
+					<h2 class="slide-title">
+						Спорт-бар
+					</h2>
+					<h3 class="slide-subtitle">Заходи с друзьями поорать</h3>
+					<p class="slide-description">
+							Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
+					</p>
+				</div>
+
+			</div>
+			<div class="slide" data-anchor="slide2">
+
+				<div class="slide-content wrapper-2 wrapper-3">
+					<ul class="slide-menu__up">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">Меню</a></li>
+						<li class="slide-menu__item"><a href="#">Трансляции </a></li>
+					</ul>
+					<h2 class="slide-title__up">
+						Новости и акции
+					</h2>
+					
+					<div class="news">
+						<div class="news-item">
+							<img src="img/sport/news-1.jpg" alt="20% Скидка" class="news-item__img">
+							<h3 class="news-item__title">Акция -20% в эту пятницу</h3>
+							<p class="news-item__description">Но только для негров</p>
+						</div>
+						<div class="news-item">
+							<img src="img/sport/news-2.jpg" alt="Ребята пинающие мяч" class="news-item__img">
+							<h3 class="news-item__title">Там это, финал завтра же</h3>
+							<p class="news-item__description">Кричалки сами себя не прокричат. Заруливайте короче</p>
+						</div>
+						<div class="news-item">
+							<img src="img/sport/news-3.jpg" alt="Ребята бегающие за мячом" class="news-item__img">
+							<h3 class="news-item__title">Футбольчик, мальчики походят на качков</h3>
+							<p class="news-item__description">Записываемся на полуфинальчики</p>
+						</div>
+						<div class="news-item">
+							<img src="img/sport/news-4.jpg" alt="Ребята смотрят, как пробивают пенальти" class="news-item__img">
+							<h3 class="news-item__title">Новость как новость</h3>
+							<p class="news-item__description">Не лучше и не хуже остальных</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section bowling" id="section2">
+			<div class="wrapper"></div>
+			<div class="wrapper-2"></div>
+			<div class="slide" id="slide1">
+				
+				<div class="slide-content">
+					<ul class="slide-menu">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">Новости</a></li>
+						<li class="slide-menu__item"><a href="#">Расписание</a></li>
+						<li class="slide-menu__item"><a href="#">Галерея</a></li>
+					</ul>
+					<h2 class="slide-title">
+						Боулинг
+					</h2>
+					<h3 class="slide-subtitle">
+						Единственный в центре города боулинг с восемью дорожками
+					</h3>
+					<p class="slide-description">
+						Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
+					</p>
+				</div>
+
+			</div>
+			<div class="slide" id="slide2">
+				
+				<div class="slide-content wrapper-3 wrapper-2">
+					<ul class="slide-menu__up">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">Новости</a></li>
+						<li class="slide-menu__item"><a href="#">Расписание</a></li>
+						<li class="slide-menu__item"><a href="#">Галерея </a></li>
+					</ul>
+					<h2 class="slide-title__up">
+						Новости и события
+					</h2>
+
+					<div class="news">
+						<div class="news-item">
+							<img src="img/bowling/news-1.jpg" alt="Кегли всей семьёй" class="news-item__img">
+							<h3 class="news-item__title">Сегодня у нас родилась малышка-кегля, коллектив поздравляет родителей</h3>
+							<p class="news-item__description">Шары пообещали первое время не сильно ее бить</p>
+						</div>
+						<div class="news-item">
+							<img src="img/bowling/news-2.jpg" alt="Котик, который хочет остаться дома" class="news-item__img">
+							<h3 class="news-item__title">Общим голосованием было принято решение седня всем остаться дома</h3>
+							<p class="news-item__description">Работа для дураков</p>
+						</div>
+						<div class="news-item">
+							<img src="img/bowling/news-3.jpg" alt="Кегли как кегли" class="news-item__img">
+							<h3 class="news-item__title">Новость как новость</h3>
+							<p class="news-item__description">Не лучше и не хуже остальных</p>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			<div class="slide" id="slide3">
+				
+				<div class="slide-content wrapper-2 wrapper-3">
+					<ul class="slide-menu__up">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">Новости</a></li>
+						<li class="slide-menu__item"><a href="#">Расписание</a></li>
+						<li class="slide-menu__item"><a href="#">Галерея </a></li>
+					</ul>
+					<h2 class="slide-title__up">
+						Расписание
+					</h2>
+					<p class="schedule-description">Тарифы действительны с 9 января по 31 мая 2019</p>
+					<table class="table">
+						<tr>
+							<td></td>
+							<th>Понедельник</td>
+							<th>Вторник</td>
+							<th>Среда</td>
+							<th>Четверг</td>
+							<th>Пятница</td>
+							<th>Суббота</td>
+							<th>Воскресенье</th>
+						</tr>
+						<tr class="table-row__high table-row__white">
+							<td>12:00–15:00</td>
+							<td>3 часа по цене 1=360***</td>
+							<td>3 часа по цене 1=360***</td>
+							<td>3 часа по цене 1=360***</td>
+							<td>3 часа по цене 1=360***</td>
+							<td>3 часа по цене 1=360***</td>
+							<td>599 (420*)</td>
+							<td>599 (420*)</td>
+						</tr>
+						<tr>
+							<td>15:00–18:00</td>
+							<td>360</td>
+							<td>360</td>
+							<td>333</td>
+							<td>360</td>
+							<td>599</td>
+							<td>599 (420*)</td>
+							<td>599 (420*)</td>
+						</tr>
+						<tr class="table-row__white">
+							<td>18:00–10:00</td>
+							<td>360</td>
+							<td>360</td>
+							<td>333</td>
+							<td>360</td>
+							<td>599</td>
+							<td>599 (420*)</td>
+							<td>599 (420*)</td>
+						</tr>
+						<tr>
+							<td>00:00–02:00</td>
+							<td>360</td>
+							<td>360</td>
+							<td>333</td>
+							<td>360</td>
+							<td>599</td>
+							<td>599 (420*)</td>
+							<td>599 (420*)</td>
+						</tr>
+					</table>
+					
+				</div>
+
+			</div>
+			<div class="slide" id="slide4">
+					<div class="slide-content wrapper-2 wrapper-3">
+							<ul class="slide-menu__up">
+								<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+								<li class="slide-menu__item"><a href="#">Новости</a></li>
+								<li class="slide-menu__item"><a href="#">Расписание</a></li>
+								<li class="slide-menu__item"><a href="#">Галерея </a></li>
+							</ul>
+							<h2 class="slide-title__up">
+								Галерея
+							</h2>
+							<div class="gallery">
+							</div>
+
+					</div>
+			</div>
+		</div>
+
+		<div class="section" id="section3">Караоке</div>
+		<div class="section" id="section4">Ресторан "Веранда"</div>
+
+		<div class="section fog" id="section5">
+			<div class="wrapper"></div>
+			<div class="wrapper-2"></div>
+			<div class="slide" id="slide1">
+				<div class="slide-content">
+					<ul class="slide-menu">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">События</a></li>
+						<li class="slide-menu__item"><a href="#">Информация</a></li>
+					</ul>
+					<h2 class="slide-title">Бар Туман</h2>
+					<h3 class="slide-subtitle">Молодым у нас всегда дорога в бар</h3>
+					<p class="slide-description">
+							Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
+					</p>
+				</div>
+
+			</div>
+			<div class="slide" id="slide2">
+				<div class="slide-content wrapper-2 wrapper-3">
+					<ul class="slide-menu__up">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">События</a></li>
+						<li class="slide-menu__item"><a href="#">Информация</a></li>
+					</ul>
+					<h2 class="slide-title__up">
+						События
+					</h2>
+					<h3 class="slide-subtitle">
+						Ночь студентов
+					</h3>
+					<p class="slide-description">
+						Первого сентября, пятница, начало в 22:00<br>Отрыв и угар, приходи и тащи своих сокурсников
+					</p>
+					<button class="button button-ticket">
+						Купить билет
+					</button>
+				</div>
+			</div>
+			<div class="slide" id="slide3">
+				<div class="slide-content wrapper-2 wrapper-3">
+					<ul class="slide-menu__up">
+						<li class="slide-menu__item"><a href="#">Забронировать</a></li>
+						<li class="slide-menu__item"><a href="#">События</a></li>
+						<li class="slide-menu__item"><a href="#">Информация</a></li>
+					</ul>
+					<h2 class="slide-title__up">
+						Информация
+					</h2>
+					<div class="news">
+						<div class="news-item">
+							<img src="img/fog/news-1.jpg" alt="Акции и скидки" class="news-item__img">
+							<h3 class="news-item__title">Акции</h3>
+						</div>
+						<div class="news-item">
+							<img src="img/fog/news-2.jpg" alt="Кальян" class="news-item__img">
+							<h3 class="news-item__title">Кальян</h3>
+						</div>
+						<div class="news-item">
+							<img src="img/fog/news-3.jpg" alt="Красивое блюдо" class="news-item__img">
+							<h3 class="news-item__title">Кухня</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="section6">Карта</div>
+	</div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
