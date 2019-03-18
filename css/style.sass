@@ -120,6 +120,9 @@ body
     font-weight: 700
     display: flex
     transform: translateY(3px)
+    &:hover
+        opacity: 0.8
+        transition: 0.2s
     &-icon
         background: url('../img/icons/phone.png') center no-repeat
         width: 16px
@@ -149,6 +152,14 @@ body
     width: 26px
     height: 26px
     display: flex
+#vk
+    &:hover
+        opacity: 0.8
+        transition: 0.2s
+#inst
+    &:hover
+        opacity: 0.8
+        transition: 0.2s
 // .hamburger
 //     position: fixed
 //     top: 65px
@@ -207,10 +218,6 @@ body
         height: 48px
         transform: translateX(30px)
         opacity: 0.9
-        &:hover
-            cursor: pointer
-            opacity: 1
-            transition: 1,2s
 .button
     color: #ffffff
     font-family: "Ubuntu"
@@ -220,10 +227,24 @@ body
     border-radius: 3px
     background-color: #e2007c
     border: 0px
+    &:hover
+        cursor: pointer
+        opacity: 1
+        transition: 1,2s
     &-ticket
         width: 172px
         height: 48px
         margin-left: 132px
+    &-sub
+        width: 172px
+        height: 48px
+        color: #ffffff
+        font-family: "Ubuntu"
+        font-size: 16px
+        font-weight: 300
+        line-height: 18px
+        border: 0px
+        transform: translateY(-2px)
 .slide
     text-align: left
     &-menu
@@ -424,6 +445,8 @@ input[type="checkbox"] + span
     text-decoration: none
 .not-under
     text-decoration: none
+    &:hover
+        transform: none
 .action
     position: relative
     &::after
@@ -455,7 +478,7 @@ input[type="checkbox"] + span
         line-height: 18px
         text-align: left
         padding-right: 141px
-        padding-top: 34px
+        padding-top: 24px
     &__bold
         font-weight: 700
 .address
@@ -464,10 +487,12 @@ input[type="checkbox"] + span
     font-family: "Ubuntu"
     font-size: 24px
     font-weight: 300
-    line-height: 34px  
+    line-height: 34px
+    padding-bottom: 50px
     &-wrapper
         display: flex
         flex-direction: column
+        padding-top: 366px
 .lunch
     width: 171px
     color: #000000
@@ -475,3 +500,40 @@ input[type="checkbox"] + span
     font-size: 24px
     font-weight: 300
     line-height: 34px
+.map
+    &-hr
+        position: absolute
+        right: 0px
+        bottom: 300px
+        border: 0px
+        width: 960px
+        height: 2px
+        background-color: #e0e0e0
+    &-form
+        position: absolute
+        bottom: 100px
+        right: 200px
+        &-wrapper
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: flex-end
+        &__sub
+            color: #000000
+            font-family: "Ubuntu"
+            font-size: 24px
+            font-weight: 300
+            line-height: 34px
+            &__bold
+                font-weight: 700
+        &__input
+            width: 360px
+            height: 48px
+            border-radius: 5px
+            background-color: #ececec
+            padding-left: 10px
+            border: 0px
+            font-size: 22px
+            font-family: "Ubuntu"
+            margin-top: 27px
+            margin-right: 24px

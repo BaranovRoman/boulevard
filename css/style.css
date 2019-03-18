@@ -178,6 +178,12 @@ body {
           transform: translateY(3px);
 }
 
+.phone:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .phone-icon {
   background: url("../img/icons/phone.png") center no-repeat;
   width: 16px;
@@ -228,6 +234,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#vk:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#inst:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .form {
@@ -311,13 +329,6 @@ body {
   opacity: 0.9;
 }
 
-.form__button:hover {
-  cursor: pointer;
-  opacity: 1;
-  -webkit-transition: 1,2s;
-  transition: 1,2s;
-}
-
 .button {
   color: #ffffff;
   font-family: "Ubuntu";
@@ -329,10 +340,30 @@ body {
   border: 0px;
 }
 
+.button:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 1,2s;
+  transition: 1,2s;
+}
+
 .button-ticket {
   width: 172px;
   height: 48px;
   margin-left: 132px;
+}
+
+.button-sub {
+  width: 172px;
+  height: 48px;
+  color: #ffffff;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  border: 0px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .slide {
@@ -647,6 +678,11 @@ input[type="checkbox"] + span:checked {
   text-decoration: none;
 }
 
+.not-under:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .action {
   position: relative;
 }
@@ -691,7 +727,7 @@ input[type="checkbox"] + span:checked {
   line-height: 18px;
   text-align: left;
   padding-right: 141px;
-  padding-top: 34px;
+  padding-top: 24px;
 }
 
 .table-map__bold {
@@ -705,6 +741,7 @@ input[type="checkbox"] + span:checked {
   font-size: 24px;
   font-weight: 300;
   line-height: 34px;
+  padding-bottom: 50px;
 }
 
 .address-wrapper {
@@ -715,6 +752,7 @@ input[type="checkbox"] + span:checked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 366px;
 }
 
 .lunch {
@@ -724,5 +762,62 @@ input[type="checkbox"] + span:checked {
   font-size: 24px;
   font-weight: 300;
   line-height: 34px;
+}
+
+.map-hr {
+  position: absolute;
+  right: 0px;
+  bottom: 300px;
+  border: 0px;
+  width: 960px;
+  height: 2px;
+  background-color: #e0e0e0;
+}
+
+.map-form {
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+}
+
+.map-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.map-form__sub {
+  color: #000000;
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.map-form__sub__bold {
+  font-weight: 700;
+}
+
+.map-form__input {
+  width: 360px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #ececec;
+  padding-left: 10px;
+  border: 0px;
+  font-size: 22px;
+  font-family: "Ubuntu";
+  margin-top: 27px;
+  margin-right: 24px;
 }
 /*# sourceMappingURL=style.css.map */
