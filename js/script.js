@@ -22,8 +22,11 @@ let screenOne = document.querySelector('.slides-main-1'),
     screenFive = document.querySelector('.slides-main-5')
 
 screenOne.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 25%";
-    screenTwo.style.flex = "0 0 15%";
+    screenOne.style.flex = "0 0 30%";
+    screenTwo.style.flex = "0 0 17.5%";
+    screenThree.style.flex = "0 0 17.5%";
+    screenFour.style.flex = "0 0 17.5%";
+    screenFive.style.flex = "0 0 17.5%";
 });
 screenOne.addEventListener('mouseout', function() {
     screenOne.style.flex = "0 0 20%";
@@ -33,8 +36,11 @@ screenOne.addEventListener('mouseout', function() {
     screenFive.style.flex = "0 0 20%";
 });
 screenTwo.addEventListener('mouseover', function() {
-    screenTwo.style.flex = "0 0 25%";
-    screenThree.style.flex = "0 0 15%";
+    screenOne.style.flex = "0 0 17.5%";
+    screenTwo.style.flex = "0 0 30%";
+    screenThree.style.flex = "0 0 17.5%";
+    screenFour.style.flex = "0 0 17.5%";
+    screenFive.style.flex = "0 0 17.5%";
 });
 screenTwo.addEventListener('mouseout', function() {
     screenOne.style.flex = "0 0 20%";
@@ -44,8 +50,11 @@ screenTwo.addEventListener('mouseout', function() {
     screenFive.style.flex = "0 0 20%";
 });
 screenThree.addEventListener('mouseover', function() {
-    screenThree.style.flex = "0 0 25%";
-    screenFour.style.flex = "0 0 15%";
+    screenOne.style.flex = "0 0 17.5%";
+    screenTwo.style.flex = "0 0 17.5%";
+    screenThree.style.flex = "0 0 30%";
+    screenFour.style.flex = "0 0 17.5%";
+    screenFive.style.flex = "0 0 17.5%";
 });
 screenThree.addEventListener('mouseout', function() {
     screenOne.style.flex = "0 0 20%";
@@ -55,8 +64,11 @@ screenThree.addEventListener('mouseout', function() {
     screenFive.style.flex = "0 0 20%";
 });
 screenFour.addEventListener('mouseover', function() {
-    screenFour.style.flex = "0 0 25%";
-    screenFive.style.flex = "0 0 15%";
+    screenOne.style.flex = "0 0 17.5%";
+    screenTwo.style.flex = "0 0 17.5%";
+    screenThree.style.flex = "0 0 17.5%";
+    screenFour.style.flex = "0 0 30%";
+    screenFive.style.flex = "0 0 17.5%";
 });
 screenFour.addEventListener('mouseout', function() {
     screenOne.style.flex = "0 0 20%";
@@ -66,8 +78,11 @@ screenFour.addEventListener('mouseout', function() {
     screenFive.style.flex = "0 0 20%";
 });
 screenFive.addEventListener('mouseover', function() {
-    screenFive.style.flex = "0 0 25%";
-    screenFour.style.flex = "0 0 15%";
+    screenOne.style.flex = "0 0 17.5%";
+    screenTwo.style.flex = "0 0 17.5%";
+    screenThree.style.flex = "0 0 17.5%";
+    screenFour.style.flex = "0 0 17.5%";
+    screenFive.style.flex = "0 0 30%";
 });
 screenFive.addEventListener('mouseout', function() {
     screenOne.style.flex = "0 0 20%";
@@ -85,12 +100,13 @@ let linkOne = document.querySelector('#link1'),
     logoMed = document.querySelector('#logo-medium'),
     vk = document.querySelector('#vk'),
     inst = document.querySelector('#inst'),
-    phone = document.querySelector('#phone');
+    phone = document.querySelector('#phone'),
+    linkPhone = document.querySelector('.links-norm');
 
 jQuery(document).ready(function($) {
     $("#fullpage").fullpage({
         anchors: ['', '1page', '2page', '3page', '4page', '5page', 'mappage'],
-        sectionsColor: ['#777','#888','#999','#a8a8a8','#aeaeae','#dedede','#888888'],
+        sectionsColor: ['#777','#888','#999','#a8a8a8','#aeaeae','#dedede','#ffffff'],
         menu: '#menu',
         navigation: false,
         navigationTooltips: ['Вверх','Спорт-бар','Боулинг','Караоке','Ресторан "Веранда"','Бар "Туман"', 'Карта'],
@@ -101,58 +117,102 @@ jQuery(document).ready(function($) {
         onLeave: func,
         afterLoad: function(index){
             if (index == '1page'){
-                linkOne.classList.add('menu-active')
-                linkTwo.classList.remove('menu-active')
-                linkThree.classList.remove('menu-active')
-                linkFour.classList.remove('menu-active')
-                linkFive.classList.remove('menu-active')
+                linkOne.classList.add('menu-active');
+                linkTwo.classList.remove('menu-active');
+                linkThree.classList.remove('menu-active');
+                linkFour.classList.remove('menu-active');
+                linkFive.classList.remove('menu-active');
+                logoMed.src = 'img/icons/logo-md.png';
+                vk.src = 'img/icons/vk.png';
+                inst.src = 'img/icons/inst.png';
+                phone.src = 'img/icons/phone.png';
+                linkOne.classList.remove('white-hover');
+                linkTwo.classList.remove('white-hover');
+                linkThree.classList.remove('white-hover');
+                linkFour.classList.remove('white-hover');
+                linkFive.classList.remove('white-hover');
+                linkPhone.style.color = "white";
             } else if (index == '2page'){
-                linkTwo.classList.add('menu-active')
-                linkOne.classList.remove('menu-active')
-                linkThree.classList.remove('menu-active')
-                linkFour.classList.remove('menu-active')
-                linkFive.classList.remove('menu-active')
+                linkTwo.classList.add('menu-active');
+                linkOne.classList.remove('menu-active');
+                linkThree.classList.remove('menu-active');
+                linkFour.classList.remove('menu-active');
+                linkFive.classList.remove('menu-active');
+                logoMed.src = 'img/icons/logo-md.png';
+                vk.src = 'img/icons/vk.png';
+                inst.src = 'img/icons/inst.png';
+                phone.src = 'img/icons/phone.png';
+                linkOne.classList.remove('white-hover');
+                linkTwo.classList.remove('white-hover');
+                linkThree.classList.remove('white-hover');
+                linkFour.classList.remove('white-hover');
+                linkFive.classList.remove('white-hover');
+                linkPhone.style.color = "white";
             } else if (index == '3page'){
-                linkThree.classList.add('menu-active')
-                linkTwo.classList.remove('menu-active')
-                linkOne.classList.remove('menu-active')
-                linkFour.classList.remove('menu-active')
-                linkFive.classList.remove('menu-active')
+                linkThree.classList.add('menu-active');
+                linkTwo.classList.remove('menu-active');
+                linkOne.classList.remove('menu-active');
+                linkFour.classList.remove('menu-active');
+                linkFive.classList.remove('menu-active');
+                logoMed.src = 'img/icons/logo-md.png';
+                vk.src = 'img/icons/vk.png';
+                inst.src = 'img/icons/inst.png';
+                phone.src = 'img/icons/phone.png';
+                linkOne.classList.remove('white-hover');
+                linkTwo.classList.remove('white-hover');
+                linkThree.classList.remove('white-hover');
+                linkFour.classList.remove('white-hover');
+                linkFive.classList.remove('white-hover');
+                linkPhone.style.color = "white";
             } else if (index == '4page'){
-                linkFour.classList.add('menu-active')
-                linkTwo.classList.remove('menu-active')
-                linkThree.classList.remove('menu-active')
-                linkOne.classList.remove('menu-active')
-                linkFive.classList.remove('menu-active')
+                linkFour.classList.add('menu-active');
+                linkTwo.classList.remove('menu-active');
+                linkThree.classList.remove('menu-active');
+                linkOne.classList.remove('menu-active');
+                linkFive.classList.remove('menu-active');
+                logoMed.src = 'img/icons/logo-md.png';
+                vk.src = 'img/icons/vk.png';
+                inst.src = 'img/icons/inst.png';
+                phone.src = 'img/icons/phone.png';
+                linkOne.classList.remove('white-hover');
+                linkTwo.classList.remove('white-hover');
+                linkThree.classList.remove('white-hover');
+                linkFour.classList.remove('white-hover');
+                linkFive.classList.remove('white-hover');
+                linkPhone.style.color = "white";
             } else if (index == '5page'){
-                linkFive.classList.add('menu-active')
-                linkTwo.classList.remove('menu-active')
-                linkThree.classList.remove('menu-active')
-                linkFour.classList.remove('menu-active')
-                linkOne.classList.remove('menu-active')
-            } else if (index !== '5page' || '4page' || '3page' || '2page' || '1page') {
-                linkFive.classList.remove('menu-active')
-                linkTwo.classList.remove('menu-active')
-                linkThree.classList.remove('menu-active')
-                linkFour.classList.remove('menu-active')
-                linkOne.classList.remove('menu-active')
+                linkFive.classList.add('menu-active');
+                linkTwo.classList.remove('menu-active');
+                linkThree.classList.remove('menu-active');
+                linkFour.classList.remove('menu-active');
+                linkOne.classList.remove('menu-active');
+                logoMed.src = 'img/icons/logo-md.png';
+                vk.src = 'img/icons/vk.png';
+                inst.src = 'img/icons/inst.png';
+                phone.src = 'img/icons/phone.png';
+                linkOne.classList.remove('white-hover');
+                linkTwo.classList.remove('white-hover');
+                linkThree.classList.remove('white-hover');
+                linkFour.classList.remove('white-hover');
+                linkFive.classList.remove('white-hover');
+                linkPhone.style.color = "white";
+            } else if (index == 'mappage'){
+                linkFive.classList.remove('menu-active');
+                linkTwo.classList.remove('menu-active');
+                linkThree.classList.remove('menu-active');
+                linkFour.classList.remove('menu-active');
+                linkOne.classList.remove('menu-active');
+                linkOne.classList.add('white-hover');
+                linkTwo.classList.add('white-hover');
+                linkThree.classList.add('white-hover');
+                linkFour.classList.add('white-hover');
+                linkFive.classList.add('white-hover');
+                logoMed.src = 'img/icons/logo-pink.png';
+                vk.src = 'img/icons/vk-black.png';
+                inst.src = 'img/icons/inst-black.png';
+                phone.src = 'img/icons/phone-pink.png';
+                linkPhone.style.color = "black";
             }
-        },
-        afterLoad: function(index) {
-            if (index == 'mappage'){
-                logoMed.src = '../img/icons/logo-pink.png';
-                vk.src = '../img/icons/vk-black.png';
-                inst.src = '../img/icons/inst-black.png';
-                phone.src = '../img/icons/phone-pink.png';
-                console.log(logoMed);
-                console.log(vk);
-                console.log(inst);
-                console.log(phone);
-            } else if (index !== 'mappage')
-                logoMed.src = '../img/icons/logo-md.png';
-                vk.src = '../img/icons/vk.png';
-                inst.src = '../img/icons/inst.png';
-                phone.src = '../img/icons/phone.png';
         }
 });
 })
@@ -182,7 +242,9 @@ gallery.appendChild(div)                            //запихиваю див 
 
 
 $(function() {
- $(".fancybox").fancybox();
+ $(".fancybox").fancybox({
+    cyclic: true
+ });
 });
 
 $('.gallery').slick({
@@ -235,28 +297,28 @@ $('.gallery').slick({
   });
 
 //   56.009763, 92.878585
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [56.009763, 92.878585],
-            zoom: 17
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
+// ymaps.ready(function () {
+//     var myMap = new ymaps.Map('map', {
+//             center: [56.009763, 92.878585],
+//             zoom: 17
+//         }, {
+//             searchControlProvider: 'yandex#search'
+//         }),
 
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
+//         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+//             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+//         ),
 
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map/marker.png',
-            iconImageSize: [30, 42],
-            iconImageOffset: [-5, -38]
-        });
+//         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+//             hintContent: 'Собственный значок метки',
+//             balloonContent: 'Это красивая метка'
+//         }, {
+//             iconLayout: 'default#image',
+//             iconImageHref: 'img/map/marker.png',
+//             iconImageSize: [30, 42],
+//             iconImageOffset: [-5, -38]
+//         });
 
-    myMap.geoObjects
-        .add(myPlacemark);
-});
+//     myMap.geoObjects
+//         .add(myPlacemark);
+// });

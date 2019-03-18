@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="yandex-verification" content="9c9be585cbcebeba" />
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="icon_customImage.js"></script>
+    <!-- <script src="icon_customImage.js"></script> -->
 </head>
 <body>
 	<ul id="menu" class="menu">
@@ -25,11 +25,12 @@
 				<li data-menuanchor="#4page"><a href="#4page" class="menu__link" id="link4">Ресторан "Веранда"</a></li>
 				<li data-menuanchor="#5page"><a href="#5page" class="menu__link" id="link5">Бар "Туман"</a></li>
 		</div>
+		
 		<div class="links">
 			<div class="phone">
-				<a href="tel:+73912300040" class="links-norm">
+				<a href="tel:+73912300040" class="links-norm phone">
 					<img src="img/icons/phone.png" alt="Call" id="phone">
-				+7 391 230-00-40
+					+7 391 230-00-40
 				</a>
 			</div>
 			<div class="social">
@@ -49,48 +50,49 @@
 				
 				<div class="slides-main">
 					<div class="slides-main-1">
-							<div class="wrapper-mini"></div>
-							<div class="wrapper-mini-2"></div>
-						<a href="#section1" data-menuanchor="#1page" class="links-norm">
-							<h3 class="slides-main__title">Спорт-бар</h3>
-							<p class="slides-main__subtitle">Прямые трансляции актуальных спортивных событий под кружку пенного</p>
-							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						<a href="#1page" data-menuanchor="#1page" class="links-norm">
+							<div class="wrapper-mini">
+								<h3 class="slides-main__title">Спорт-бар</h3>
+								<p class="slides-main__subtitle">Прямые трансляции актуальных спортивных событий под кружку пенного</p>
+								<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+							</div>
 						</a>
+						
 					</div>
 					<div class="slides-main-2">
-							<div class="wrapper-mini"></div>
-							<div class="wrapper-mini-2"></div>
-						<a href="#section2" data-menuanchor="#2page" class="links-norm">
-							<h3 class="slides-main__title">Боулинг</h3>
-							<p class="slides-main__subtitle">Единственный в центре города боулинг с восемью дорожками</p>
-							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						<a href="#2page" data-menuanchor="#2page" class="links-norm">
+							<div class="wrapper-mini">
+								<h3 class="slides-main__title">Боулинг</h3>
+								<p class="slides-main__subtitle">Единственный в центре города боулинг с восемью дорожками</p>
+								<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+							</div>	
 						</a>
 					</div>
 					<div class="slides-main-3">
-						<div class="wrapper-mini"></div>
-						<div class="wrapper-mini-2"></div>
-						<a href="#section3" data-menuanchor="#1page" class="links-norm">	
-							<h3 class="slides-main__title">Караоке</h3>
-							<p class="slides-main__subtitle">Те, у кого есть желание и тяга к пению, смогут показать свой талант</p>
-							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						<a href="#3page" data-menuanchor="#3page" class="links-norm">
+							<div class="wrapper-mini">
+								<h3 class="slides-main__title">Караоке</h3>
+								<p class="slides-main__subtitle">Те, у кого есть желание и тяга к пению, смогут показать свой талант</p>
+								<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+							</div>
 						</a>
 					</div>
 					<div class="slides-main-4">
-						<div class="wrapper-mini"></div>
-						<div class="wrapper-mini-2"></div>
-						<a href="#section4" data-menuanchor="#1page" class="links-norm">
-							<h3 class="slides-main__title">Ресторан <br> «Веранда»</h3>
-							<p class="slides-main__subtitle">Для спокойного семейного ужина и делового обеда</p>
-							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						<a href="#4page" data-menuanchor="#4page" class="links-norm">
+							<div class="wrapper-mini">
+								<h3 class="slides-main__title">Ресторан <br> «Веранда»</h3>
+								<p class="slides-main__subtitle">Для спокойного семейного ужина и делового обеда</p>
+								<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+							</div>
 						</a>
 					</div>
 					<div class="slides-main-5">
-						<div class="wrapper-mini"></div>
-						<div class="wrapper-mini-2"></div>
-						<a href="#section5" data-menuanchor="#1page" class="links-norm">
-							<h3 class="slides-main__title">Бар «Туман»</h3>
-							<p class="slides-main__subtitle">Молодым у нас всегда дорога в бар</p>
-							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+						<a href="#5page" data-menuanchor="#5page" class="links-norm">
+							<div class="wrapper-mini">
+								<h3 class="slides-main__title">Бар «Туман»</h3>
+								<p class="slides-main__subtitle">Молодым у нас всегда дорога в бар</p>
+								<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
+							</div>
 						</a>
 					</div>
 				</div>
@@ -120,9 +122,9 @@
 					<div class="form">
 						<form action="#">
 							<label for="name" class="form__label">Ваше имя</label><br>
-							<input type="text" name="name" id="name" class="form__input"><br>
+							<input type="text" name="name" id="name" class="form__input" placeholder="Иван"><br>
 							<label for="phone" class="form__label">Номер телефона *</label><br>
-							<input type="text" name="phone" id="phone" class="form__input"><br>
+							<input type="text" name="phone" id="phone" class="form__input" placeholder="+7-999-555-12-34"><br>
 							<div class="form-flex">
 								<input type="checkbox" class="form__agree-check" checked="checked">
 								<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
@@ -149,7 +151,7 @@
 					</h2>
 					
 					<div class="news">
-						<div class="news-item">
+						<div class="news-item action">
 							<img src="img/sport/news-1.jpg" alt="20% Скидка" class="news-item__img">
 							<h3 class="news-item__title">Акция -20% в эту пятницу</h3>
 							<p class="news-item__description">Но только для негров</p>
@@ -159,7 +161,7 @@
 							<h3 class="news-item__title">Там это, финал завтра же</h3>
 							<p class="news-item__description">Кричалки сами себя не прокричат. Заруливайте короче</p>
 						</div>
-						<div class="news-item">
+						<div class="news-item action">
 							<img src="img/sport/news-3.jpg" alt="Ребята бегающие за мячом" class="news-item__img">
 							<h3 class="news-item__title">Футбольчик, мальчики походят на качков</h3>
 							<p class="news-item__description">Записываемся на полуфинальчики</p>
@@ -202,9 +204,9 @@
 				<div class="form">
 					<form action="#">
 						<label for="name" class="form__label">Ваше имя</label><br>
-						<input type="text" name="name" id="name" class="form__input"><br>
+						<input type="text" name="name" id="name" class="form__input" placeholder="Иван"><br>
 						<label for="phone" class="form__label">Номер телефона *</label><br>
-						<input type="text" name="phone" id="phone" class="form__input"><br>
+						<input type="text" name="phone" id="phone" class="form__input" placeholder="+7-999-555-12-34"><br>
 						<div class="form-flex">
 							<input type="checkbox" class="form__agree-check" checked="checked">
 							<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
@@ -235,7 +237,7 @@
 							<h3 class="news-item__title">Сегодня у нас родилась малышка-кегля, коллектив поздравляет родителей</h3>
 							<p class="news-item__description">Шары пообещали первое время не сильно ее бить</p>
 						</div>
-						<div class="news-item">
+						<div class="news-item action">
 							<img src="img/bowling/news-2.jpg" alt="Котик, который хочет остаться дома" class="news-item__img">
 							<h3 class="news-item__title">Общим голосованием было принято решение седня всем остаться дома</h3>
 							<p class="news-item__description">Работа для дураков</p>
@@ -358,9 +360,9 @@
 						<div class="form">
 							<form action="#">
 								<label for="name" class="form__label">Ваше имя</label><br>
-								<input type="text" name="name" id="name" class="form__input"><br>
+								<input type="text" name="name" id="name" class="form__input" placeholder="Иван"><br>
 								<label for="phone" class="form__label">Номер телефона *</label><br>
-								<input type="text" name="phone" id="phone" class="form__input"><br>
+								<input type="text" name="phone" id="phone" class="form__input" placeholder="+7-999-555-12-34"><br>
 								<div class="form-flex">
 									<input type="checkbox" class="form__agree-check" checked="checked">
 									<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
@@ -390,7 +392,7 @@
 									<h3 class="news-item__title">Стас Михайлов</h3>
 									<p class="news-item__description">Без тебя</p>
 								</div>
-								<div class="news-item">
+								<div class="news-item action">
 									<img src="img/karaoke/leps.jpg" alt="" class="news-item__img">
 									<h3 class="news-item__title">Григорий Лепс</h3>
 									<p class="news-item__description">Рюмка водки</p>
@@ -415,7 +417,7 @@
 							<li class="slide-menu__item"><a href="#4page/slide2">Меню</a></li>
 						</ul>
 						<h2 class="slide-title">
-							Ресторан "Веранда"
+							Ресторан Веранда
 						</h2>
 						<h3 class="slide-subtitle">Отдыхая как в раю, кушайте как дома! </h3>
 						<p class="slide-description">
@@ -425,9 +427,9 @@
 						<div class="form">
 							<form action="#">
 								<label for="name" class="form__label">Ваше имя</label><br>
-								<input type="text" name="name" id="name" class="form__input"><br>
+								<input type="text" name="name" id="name" class="form__input" placeholder="Иван"><br>
 								<label for="phone" class="form__label">Номер телефона *</label><br>
-								<input type="text" name="phone" id="phone" class="form__input"><br>
+								<input type="text" name="phone" id="phone" class="form__input" placeholder="+7-999-555-12-34"><br>
 								<div class="form-flex">
 									<input type="checkbox" class="form__agree-check" checked="checked">
 									<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
@@ -462,7 +464,7 @@
 									<h3 class="news-item__title">Пицца</h3>
 									<p class="news-item__description">Нашей мясной пиццей можно накормить компанию из 4-ых человек, все останутся довольны!</p>
 								</div>
-								<div class="news-item">
+								<div class="news-item action">
 									<img src="img/restaraunt/meat.jpg" alt="" class="news-item__img">
 									<h3 class="news-item__title">Мясная тарелка</h3>
 									<p class="news-item__description">Шашлыки, сардельки, стейки. Осторожно, не для вегатарианцев!</p>
@@ -496,9 +498,9 @@
 				<div class="form">
 					<form action="#">
 						<label for="name" class="form__label">Ваше имя</label><br>
-						<input type="text" name="name" id="name" class="form__input"><br>
+						<input type="text" name="name" id="name" class="form__input" placeholder="Иван"><br>
 						<label for="phone" class="form__label">Номер телефона *</label><br>
-						<input type="text" name="phone" id="phone" class="form__input"><br>
+						<input type="text" name="phone" id="phone" class="form__input" placeholder="+7-999-555-12-34"><br>
 						<div class="form-flex">
 							<input type="checkbox" class="form__agree-check" checked="checked">
 							<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
@@ -542,7 +544,7 @@
 						Информация
 					</h2>
 					<div class="news">
-						<div class="news-item">
+						<div class="news-item action">
 							<img src="img/fog/news-1.jpg" alt="Акции и скидки" class="news-item__img">
 							<h3 class="news-item__title">Акции</h3>
 						</div>
@@ -559,10 +561,55 @@
 			</div>
 		</div>
 
-		<div class="section" id="section6">
-		<div class="map" id="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1b2522143384145f9f50984ff1bf39342747dce79c4eafde007a5d262ef7fd5&amp;width=960&amp;height=940&amp;lang=ru_RU&amp;scroll=false"></script>	
+		<div class="section map-section" id="section6">
+		<div class="map-wrapper">
+			<div class="map" id="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1b2522143384145f9f50984ff1bf39342747dce79c4eafde007a5d262ef7fd5&amp;width=960&amp;height=940&amp;lang=ru_RU&amp;scroll=false"></script>		
+			</div>
+			<div class="other">
+				<table class="table-map">
+					<tr>
+						<td>Понедельник</td>
+						<td class="table-map__bold">12:00 – 02:00</td>
+					</tr>
+					<tr>
+						<td>Вторник</td>
+						<td class="table-map__bold">12:00 – 02:00</td>
+					</tr>
+					<tr>
+						<td>Среда</td>
+						<td class="table-map__bold">12:00 – 02:00</td>
+					</tr>
+					<tr>
+						<td>Четверг</td>
+						<td class="table-map__bold">12:00 – 02:00</td>
+					</tr>
+					<tr>
+						<td>Пятница</td>
+						<td class="table-map__bold">12:00 – 06:00</td>
+					</tr>
+					<tr>
+						<td>Суббота</td>
+						<td class="table-map__bold">12:00 – 06:00</td>
+					</tr>
+					<tr>
+						<td>Воскресенье</td>
+						<td class="table-map__bold">12:00 – 02:00</td>
+					</tr>
+				</table>
+			</div>
+			<div class="address-wrapper">
+					<div class="address">
+							Сурикова, 12/6 
+							1 этаж
+						</div>
+						<div class="lunch">
+							Бизнес-ланч 
+							12:00 – 16:00
+						</div>
+			</div>
 		</div>
+
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/slick.js"></script>
