@@ -2,7 +2,18 @@ body
     margin: 0
     padding: 0
 .section
-    text-align: center
+    text-align: center  
+.menu-active
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+    color: #e2007c !important
+    font-family: "Ubuntu"
+    font-size: 18px
+    font-weight: 500
+    border-radius: 18px
+    background-color: #000000
+    padding: 7px 12px 8px 12px
+    text-decoration: none
+    transition: all 0.35s  
 .menu
     position: fixed
     top: 54px
@@ -10,7 +21,8 @@ body
     z-index: 1
     li
         display: inline-block
-        padding-right: 46px
+        margin-right: 46px
+        box-sizing: border-box
     &__link
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
         color: #ffffff
@@ -30,6 +42,7 @@ body
             padding: 7px 12px 8px 12px
             text-decoration: none
             transition: all 0.35s
+
 .wrapper
     width: 755px
     height: 100%
@@ -44,6 +57,8 @@ body
         width: 100vw
         height: 100vh
         background: rgba(0,0,0,0.6)
+.zindex
+    z-index: 1
 .wrapper-mini
     width: 84px
     height: 100%
@@ -62,6 +77,12 @@ body
     background-size: cover
 .fog
     background: url('../img/fog.jpg') 100% 100% no-repeat
+    background-size: cover
+.karaoke
+    background: url('../img/karaoke/karaoke-bg.jpg') 100% 100% no-repeat
+    background-size: cover
+.restaraunt
+    background: url('../img/restaraunt/restaraunt-bg.jpg') 100% 100% no-repeat
     background-size: cover
 .logo-md
     display: none
@@ -115,13 +136,12 @@ body
     width: 26px
     height: 26px
     display: flex
-.hamburger
-    position: fixed
-    top: 65px
-    right: 99px
+// .hamburger
+//     position: fixed
+//     top: 65px
+//     right: 99px
 .form
-    display: none
-    position: fixed
+    position: absolute
     bottom: 78px
     left: 1414px
     width: 443px
@@ -204,13 +224,13 @@ body
     &-title
         padding-left: 127px
         position: relative
-        margin-top: 96px
+        margin-top: 76px
         color: #ffffff
         font-family: "Ubuntu"
         font-size: 126px
         font-weight: 500
         line-height: 47px
-        margin-bottom: 44px
+        margin-bottom: 64px
         &__up
             padding-left: 127px
             color: #ffffff
@@ -320,6 +340,8 @@ input[type="checkbox"] + span
             margin-top: 0
         &__img
             padding-top: 24px
+            width: 319px
+            height: 186px
 .schedule-description
     width: 734px
     height: 24px
@@ -367,4 +389,6 @@ input[type="checkbox"] + span
             height: 160px
 .links-norm
     color: #ffffff
+    text-decoration: none
+.not-under
     text-decoration: none

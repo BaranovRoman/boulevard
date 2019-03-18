@@ -9,49 +9,37 @@
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="yandex-verification" content="9c9be585cbcebeba" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="icon_customImage.js"></script>
 </head>
 <body>
 	<ul id="menu" class="menu">
 		<div class="logo-md">
-			<img src="img/icons/logo-md.png" alt="Бульвар">
+			<img src="img/icons/logo-md.png" alt="Бульвар" id="logo-medium">
 		</div>
 		<div class="menu-md">
-				<li data-menuanchor="#1page"><a href="#1page" class="menu__link">Спорт-бар</a></li>
-				<li data-menuanchor="#2page"><a href="#2page" class="menu__link">Боулинг</a></li>
-				<li data-menuanchor="#3page"><a href="#3page" class="menu__link">Караоке</a></li>
-				<li data-menuanchor="#4page"><a href="#4page" class="menu__link">Ресторан "Веранда"</a></li>
-				<li data-menuanchor="#5page"><a href="#5page" class="menu__link">Бар "Туман"</a></li>
+				<li data-menuanchor="#1page"><a href="#1page" class="menu__link" id="link1">Спорт-бар</a></li>
+				<li data-menuanchor="#2page"><a href="#2page" class="menu__link" id="link2">Боулинг</a></li>
+				<li data-menuanchor="#3page"><a href="#3page" class="menu__link" id="link3">Караоке</a></li>
+				<li data-menuanchor="#4page"><a href="#4page" class="menu__link" id="link4">Ресторан "Веранда"</a></li>
+				<li data-menuanchor="#5page"><a href="#5page" class="menu__link" id="link5">Бар "Туман"</a></li>
 		</div>
 		<div class="links">
 			<div class="phone">
 				<a href="tel:+73912300040" class="links-norm">
-					<div class="phone-icon"></div>
+					<img src="img/icons/phone.png" alt="Call" id="phone">
 				+7 391 230-00-40
 				</a>
 			</div>
 			<div class="social">
-				<a href="https://vk.com/club23129858"><div class="vk"></div></a>
-				<a href="https://www.instagram.com/bulvar_rest/"><div class="inst"></div></a>
+				<a href="https://vk.com/club23129858"><img src="img/icons/vk.png" alt="VK" id="vk"></a>
+				<a href="https://www.instagram.com/bulvar_rest/"><img src="img/icons/inst.png" alt="Instagram" id="inst"></a>
 			</div>
-			<div class="hamburger">
+			<!-- <div class="hamburger">
 				<img src="img/icons/menu.png" alt="Меню">
-			</div>
+			</div> -->
 		</div>
-		<div class="form">
-				<form action="#">
-					<label for="name" class="form__label">Ваше имя</label><br>
-					<input type="text" name="name" id="name" class="form__input"><br>
-					<label for="phone" class="form__label">Номер телефона *</label><br>
-					<input type="text" name="phone" id="phone" class="form__input"><br>
-					<div class="form-flex">
-						<input type="checkbox" class="form__agree-check" checked="checked">
-						<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
-						<button class="button form__button">
-							Забронировать
-						</button>
-					</div>
-				</form>
-			</div>
 	</ul>	
 	<div id="fullpage">
 		<div class="section" id="section0">
@@ -63,7 +51,7 @@
 					<div class="slides-main-1">
 							<div class="wrapper-mini"></div>
 							<div class="wrapper-mini-2"></div>
-						<a href="#section1" class="links-norm">
+						<a href="#section1" data-menuanchor="#1page" class="links-norm">
 							<h3 class="slides-main__title">Спорт-бар</h3>
 							<p class="slides-main__subtitle">Прямые трансляции актуальных спортивных событий под кружку пенного</p>
 							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
@@ -72,7 +60,7 @@
 					<div class="slides-main-2">
 							<div class="wrapper-mini"></div>
 							<div class="wrapper-mini-2"></div>
-						<a href="#section2" class="links-norm">
+						<a href="#section2" data-menuanchor="#2page" class="links-norm">
 							<h3 class="slides-main__title">Боулинг</h3>
 							<p class="slides-main__subtitle">Единственный в центре города боулинг с восемью дорожками</p>
 							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
@@ -81,7 +69,7 @@
 					<div class="slides-main-3">
 						<div class="wrapper-mini"></div>
 						<div class="wrapper-mini-2"></div>
-						<a href="#section3" class="links-norm">	
+						<a href="#section3" data-menuanchor="#1page" class="links-norm">	
 							<h3 class="slides-main__title">Караоке</h3>
 							<p class="slides-main__subtitle">Те, у кого есть желание и тяга к пению, смогут показать свой талант</p>
 							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
@@ -90,7 +78,7 @@
 					<div class="slides-main-4">
 						<div class="wrapper-mini"></div>
 						<div class="wrapper-mini-2"></div>
-						<a href="#section4" class="links-norm">
+						<a href="#section4" data-menuanchor="#1page" class="links-norm">
 							<h3 class="slides-main__title">Ресторан <br> «Веранда»</h3>
 							<p class="slides-main__subtitle">Для спокойного семейного ужина и делового обеда</p>
 							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
@@ -99,7 +87,7 @@
 					<div class="slides-main-5">
 						<div class="wrapper-mini"></div>
 						<div class="wrapper-mini-2"></div>
-						<a href="#section5" class="links-norm">
+						<a href="#section5" data-menuanchor="#1page" class="links-norm">
 							<h3 class="slides-main__title">Бар «Туман»</h3>
 							<p class="slides-main__subtitle">Молодым у нас всегда дорога в бар</p>
 							<img src="img/icons/arrow.png" alt="GO" class="slides-main__arrow">
@@ -117,6 +105,7 @@
 				
 				<div class="slide-content">
 					<ul class="slide-menu">
+						<li class="slide-menu__item not-under">Забронировать</li>
 						<li class="slide-menu__item"><a href="#1page/slide2">Новости и акции</a></li>
 						<li class="slide-menu__item"><a href="#">Меню</a></li>
 						<li class="slide-menu__item"><a href="#">Трансляции</a></li>
@@ -128,6 +117,21 @@
 					<p class="slide-description">
 							Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
 					</p>
+					<div class="form">
+						<form action="#">
+							<label for="name" class="form__label">Ваше имя</label><br>
+							<input type="text" name="name" id="name" class="form__input"><br>
+							<label for="phone" class="form__label">Номер телефона *</label><br>
+							<input type="text" name="phone" id="phone" class="form__input"><br>
+							<div class="form-flex">
+								<input type="checkbox" class="form__agree-check" checked="checked">
+								<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+								<button class="button form__button">
+									Забронировать
+								</button>
+							</div>
+						</form>
+					</div>
 				</div>
 
 			</div>
@@ -136,6 +140,7 @@
 				<div class="slide-content wrapper-2 wrapper-3">
 					<ul class="slide-menu__up">
 						<li class="slide-menu__item"><a href="#1page">Забронировать</a></li>
+						<li class="slide-menu__item not-under">Новости и акции</li>
 						<li class="slide-menu__item"><a href="#">Меню</a></li>
 						<li class="slide-menu__item"><a href="#">Трансляции </a></li>
 					</ul>
@@ -165,6 +170,7 @@
 							<p class="news-item__description">Не лучше и не хуже остальных</p>
 						</div>
 					</div>
+					
 
 				</div>
 			</div>
@@ -175,9 +181,9 @@
 			<div class="wrapper-2"></div>
 			<div class="slide" data-anchor="slide1">
 				
-				<div class="slide-content">
+				<div class="slide-content wrapper wrapper-2">
 					<ul class="slide-menu">
-						<li class="slide-menu__item"><a href="#2page">Забронировать</a></li>
+						<li class="slide-menu__item not-under">Забронировать</li>
 						<li class="slide-menu__item"><a href="#2page/slide2">Новости</a></li>
 						<li class="slide-menu__item"><a href="#2page/slide3">Расписание</a></li>
 						<li class="slide-menu__item"><a href="#2page/slide4">Галерея</a></li>
@@ -193,13 +199,29 @@
 					</p>
 				</div>
 
+				<div class="form">
+					<form action="#">
+						<label for="name" class="form__label">Ваше имя</label><br>
+						<input type="text" name="name" id="name" class="form__input"><br>
+						<label for="phone" class="form__label">Номер телефона *</label><br>
+						<input type="text" name="phone" id="phone" class="form__input"><br>
+						<div class="form-flex">
+							<input type="checkbox" class="form__agree-check" checked="checked">
+							<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+							<button class="button form__button">
+								Забронировать
+							</button>
+						</div>
+					</form>
+				</div>
+
 			</div>
 			<div class="slide" data-anchor="slide2">
 				
 				<div class="slide-content wrapper-3 wrapper-2">
 					<ul class="slide-menu__up">
 						<li class="slide-menu__item"><a href="#2page">Забронировать</a></li>
-						<li class="slide-menu__item"><a href="#2page/slide2">Новости</a></li>
+						<li class="slide-menu__item not-under">Новости</li>
 						<li class="slide-menu__item"><a href="#2page/slide3">Расписание</a></li>
 						<li class="slide-menu__item"><a href="#2page/slide4">Галерея </a></li>
 					</ul>
@@ -234,7 +256,7 @@
 					<ul class="slide-menu__up">
 						<li class="slide-menu__item"><a href="#2page">Забронировать</a></li>
 						<li class="slide-menu__item"><a href="#2page/slide2">Новости</a></li>
-						<li class="slide-menu__item"><a href="#2page/slide3">Расписание</a></li>
+						<li class="slide-menu__item not-under">Расписание</li>
 						<li class="slide-menu__item"><a href="#2page/slide4">Галерея </a></li>
 					</ul>
 					<h2 class="slide-title__up">
@@ -303,7 +325,7 @@
 								<li class="slide-menu__item"><a href="#2page">Забронировать</a></li>
 								<li class="slide-menu__item"><a href="#2page/slide2">Новости</a></li>
 								<li class="slide-menu__item"><a href="#2page/slide3">Расписание</a></li>
-								<li class="slide-menu__item"><a href="#2page/slide4">Галерея </a></li>
+								<li class="slide-menu__item not-under">Галерея</li>
 							</ul>
 							<h2 class="slide-title__up">
 								Галерея
@@ -315,8 +337,145 @@
 			</div>
 		</div>
 
-		<div class="section" id="section3">Караоке</div>
-		<div class="section" id="section4">Ресторан "Веранда"</div>
+		<div class="section karaoke" id="section3">
+			<div class="wrapper"></div>
+			<div class="wrapper-2"></div>
+				<div class="slide" data-anchor="slide1">
+					
+					<div class="slide-content wrapper wrapper-2">
+						<ul class="slide-menu">
+							<li class="slide-menu__item not-under">Забронировать</li>
+							<li class="slide-menu__item"><a href="#3page/slide2">Новости</a></li>
+						</ul>
+						<h2 class="slide-title">
+							Караоке
+						</h2>
+						<h3 class="slide-subtitle">Каракос-каракас</h3>
+						<p class="slide-description">
+								Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
+						</p>
+					</div>
+						<div class="form">
+							<form action="#">
+								<label for="name" class="form__label">Ваше имя</label><br>
+								<input type="text" name="name" id="name" class="form__input"><br>
+								<label for="phone" class="form__label">Номер телефона *</label><br>
+								<input type="text" name="phone" id="phone" class="form__input"><br>
+								<div class="form-flex">
+									<input type="checkbox" class="form__agree-check" checked="checked">
+									<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+									<button class="button form__button">
+										Забронировать
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+				<div class="slide" data-anchor="slide2">
+
+						<div class="slide-content wrapper-2 wrapper-3">
+							<ul class="slide-menu__up">
+								<li class="slide-menu__item"><a href="#3page">Забронировать</a></li>
+								<li class="slide-menu__item not-under">Новости</li>
+							</ul>
+							<h2 class="slide-title__up">
+								Новости
+							</h2>
+							
+							<div class="news">
+								<div class="news-item">
+									<img src="img/karaoke/stas.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Стас Михайлов</h3>
+									<p class="news-item__description">Без тебя</p>
+								</div>
+								<div class="news-item">
+									<img src="img/karaoke/leps.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Григорий Лепс</h3>
+									<p class="news-item__description">Рюмка водки</p>
+								</div>
+								<div class="news-item">
+									<img src="img/karaoke/krug.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Михаил Круг</h3>
+									<p class="news-item__description">Девочка-пай</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+		<div class="section restaraunt" id="section4">
+			<div class="wrapper"></div>
+			<div class="wrapper-2"></div>
+				<div class="slide" data-anchor="slide1">
+					
+					<div class="slide-content wrapper wrapper-2">
+						<ul class="slide-menu">
+							<li class="slide-menu__item not-under">Забронировать</li>
+							<li class="slide-menu__item"><a href="#4page/slide2">Меню</a></li>
+						</ul>
+						<h2 class="slide-title">
+							Ресторан "Веранда"
+						</h2>
+						<h3 class="slide-subtitle">Отдыхая как в раю, кушайте как дома! </h3>
+						<p class="slide-description">
+								Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
+						</p>
+					</div>
+						<div class="form">
+							<form action="#">
+								<label for="name" class="form__label">Ваше имя</label><br>
+								<input type="text" name="name" id="name" class="form__input"><br>
+								<label for="phone" class="form__label">Номер телефона *</label><br>
+								<input type="text" name="phone" id="phone" class="form__input"><br>
+								<div class="form-flex">
+									<input type="checkbox" class="form__agree-check" checked="checked">
+									<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+									<button class="button form__button">
+										Забронировать
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+				<div class="slide" data-anchor="slide2">
+
+						<div class="slide-content wrapper-2 wrapper-3">
+							<ul class="slide-menu__up">
+								<li class="slide-menu__item"><a href="#4page">Забронировать</a></li>
+								<li class="slide-menu__item not-under">Меню</li>
+							</ul>
+							<h2 class="slide-title__up">
+								Наши блюда
+							</h2>
+							
+							<div class="news">
+								<div class="news-item">
+									<img src="img/restaraunt/sushi.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Роллы</h3>
+									<p class="news-item__description">Набор "Филадельфия" включает в себя вкуснейшие роллы с использованием нежнейшего, сливочного сыра.</p>
+								</div>
+								<div class="news-item">
+									<img src="img/restaraunt/pizza.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Пицца</h3>
+									<p class="news-item__description">Нашей мясной пиццей можно накормить компанию из 4-ых человек, все останутся довольны!</p>
+								</div>
+								<div class="news-item">
+									<img src="img/restaraunt/meat.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Мясная тарелка</h3>
+									<p class="news-item__description">Шашлыки, сардельки, стейки. Осторожно, не для вегатарианцев!</p>
+								</div>
+								<div class="news-item">
+									<img src="img/restaraunt/pasta.jpg" alt="" class="news-item__img">
+									<h3 class="news-item__title">Паста</h3>
+									<p class="news-item__description">Классическая итальянская паста, рекомендуем соус карбонара или болоньезе</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
 
 		<div class="section fog" id="section5">
 			<div class="wrapper"></div>
@@ -324,7 +483,7 @@
 			<div class="slide" data-anchor="slide1">
 				<div class="slide-content">
 					<ul class="slide-menu">
-						<li class="slide-menu__item"><a href="#5page">Забронировать</a></li>
+						<li class="slide-menu__item not-under">Забронировать</li>
 						<li class="slide-menu__item"><a href="#5page/slide2">События</a></li>
 						<li class="slide-menu__item"><a href="#5page/slide3">Информация</a></li>
 					</ul>
@@ -334,13 +493,28 @@
 							Мышление параллельно дает социальный эриксоновский гипноз. Эгоцентризм, в первом приближении, отталкивает девиантный филогенез. Ригидность параллельна. Как отмечает Д.Майерс, у нас есть некоторое чувство конфликта.
 					</p>
 				</div>
+				<div class="form">
+					<form action="#">
+						<label for="name" class="form__label">Ваше имя</label><br>
+						<input type="text" name="name" id="name" class="form__input"><br>
+						<label for="phone" class="form__label">Номер телефона *</label><br>
+						<input type="text" name="phone" id="phone" class="form__input"><br>
+						<div class="form-flex">
+							<input type="checkbox" class="form__agree-check" checked="checked">
+							<p class="form__agree">Я даю свое согласие на обработку персональных данных</p>
+							<button class="button form__button">
+								Забронировать
+							</button>
+						</div>
+					</form>
+				</div>
 
 			</div>
 			<div class="slide" data-anchor="slide2">
 				<div class="slide-content wrapper-2 wrapper-3">
 					<ul class="slide-menu__up">
 						<li class="slide-menu__item"><a href="#5page">Забронировать</a></li>
-						<li class="slide-menu__item"><a href="#5page/slide2">События</a></li>
+						<li class="slide-menu__item not-under">События</li>
 						<li class="slide-menu__item"><a href="#5page/slide3">Информация</a></li>
 					</ul>
 					<h2 class="slide-title__up">
@@ -362,7 +536,7 @@
 					<ul class="slide-menu__up">
 						<li class="slide-menu__item"><a href="#5page">Забронировать</a></li>
 						<li class="slide-menu__item"><a href="#5page/slide2">События</a></li>
-						<li class="slide-menu__item"><a href="#5page/slide3">Информация</a></li>
+						<li class="slide-menu__item not-under">Информация</li>
 					</ul>
 					<h2 class="slide-title__up">
 						Информация
@@ -385,8 +559,10 @@
 			</div>
 		</div>
 
-		<div class="section" id="section6">Карта</div>
-	</div>
+		<div class="section" id="section6">
+		<div class="map" id="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae1b2522143384145f9f50984ff1bf39342747dce79c4eafde007a5d262ef7fd5&amp;width=960&amp;height=940&amp;lang=ru_RU&amp;scroll=false"></script>	
+		</div>
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/slick.js"></script>
