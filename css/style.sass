@@ -102,11 +102,8 @@ body
     text-align: center
     transition: all 0s
 .logo-lg
-    display: block
     position: absolute
-    top: 35px
-    left: 830px
-    text-align: center
+    left: 280px
     z-index: 1
     transition: ease 0.05s
 .menu-md
@@ -166,7 +163,7 @@ body
 //     right: 99px
 .form
     position: absolute
-    bottom: 78px
+    bottom: 93px
     left: 1414px
     width: 443px
     height: 336px
@@ -247,15 +244,14 @@ body
         transform: translateY(-2px)
 .slide
     text-align: left
+    &-left
+        position: absolute
+        left: 135px
+        bottom: 93px
     &-menu
-        padding-left: 135px
-        padding-top: 495px
-        &__item
-            opacity: 0.9
-            transition: 0.3s
-            &:hover
-                opacity: 1
-                transform: scale(1.1)
+        padding-left: 0
+        padding-bottom: 85px
+        margin: 0
         &__up
             padding-left: 135px
             padding-top: 215px
@@ -265,19 +261,24 @@ body
             color: #ffffff
             font-family: Ubuntu
             font-size: 24px
+            line-height: 30px
             text-decoration: underline
+            opacity: 0.9
+            transition: 0.3s
+            &:hover
+                opacity: 1
+                transform: scale(1.1)
             a
                 color: #fff
     &-title
-        padding-left: 127px
         position: relative
-        margin-top: 76px
         color: #ffffff
         font-family: "Ubuntu"
         font-size: 126px
         font-weight: 500
-        line-height: 47px
-        margin-bottom: 64px
+        line-height: 130px
+        margin: 0
+        padding-bottom: 16px
         &__up
             padding-left: 127px
             color: #ffffff
@@ -292,16 +293,16 @@ body
         font-family: Ubuntu
         font-size: 24px
         line-height: 24px
-        padding-left: 135px
+        margin: 0
+        padding-bottom: 37px
     &-description
-        padding-left: 135px
-        padding-top: 20px
         width: 656px
         height: 71px
         color: #ffffff
         font-family: Ubuntu
         font-size: 16px
         line-height: 24px
+        margin: 0
 .slides-main
     display: flex
     text-align: left
@@ -349,20 +350,28 @@ body
         font-size: 36px
         font-weight: 500
         line-height: 47px
-        margin-top: 614px
-        padding-left: 62px
+        // margin-top: 614px
+        // padding-left: 62px
+        position: absolute
+        bottom: 231px
+        left: 62px
     &__subtitle
         color: #ffffff
         height: 72px
         font-family: Ubuntu
         font-size: 16px
         line-height: 24px
-        padding-left: 62px
         width: 261px
-        margin-top: 27px
-        margin-bottom: 29px
+        // padding-left: 62px
+        // margin-top: 27px
+        // margin-bottom: 29px
+        position: absolute
+        bottom: 132px
+        left: 62px
     &__arrow
-        padding-left: 62px
+        position: absolute
+        bottom: 55px
+        left: 62px
 input[type="checkbox"] + span
     background: url('../img/icons/checkbox.png') no-repeat
     &:checked

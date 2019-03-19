@@ -149,11 +149,8 @@ body {
 }
 
 .logo-lg {
-  display: block;
   position: absolute;
-  top: 35px;
-  left: 830px;
-  text-align: center;
+  left: 280px;
   z-index: 1;
   -webkit-transition: ease 0.05s;
   transition: ease 0.05s;
@@ -250,7 +247,7 @@ body {
 
 .form {
   position: absolute;
-  bottom: 78px;
+  bottom: 93px;
   left: 1414px;
   width: 443px;
   height: 336px;
@@ -370,21 +367,16 @@ body {
   text-align: left;
 }
 
+.slide-left {
+  position: absolute;
+  left: 135px;
+  bottom: 93px;
+}
+
 .slide-menu {
-  padding-left: 135px;
-  padding-top: 495px;
-}
-
-.slide-menu__item {
-  opacity: 0.9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.slide-menu__item:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  padding-left: 0;
+  padding-bottom: 85px;
+  margin: 0;
 }
 
 .slide-menu__up {
@@ -398,7 +390,17 @@ body {
   color: #ffffff;
   font-family: Ubuntu;
   font-size: 24px;
+  line-height: 30px;
   text-decoration: underline;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slide-menu__item:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .slide-menu__item a {
@@ -406,15 +408,14 @@ body {
 }
 
 .slide-title {
-  padding-left: 127px;
   position: relative;
-  margin-top: 76px;
   color: #ffffff;
   font-family: "Ubuntu";
   font-size: 126px;
   font-weight: 500;
-  line-height: 47px;
-  margin-bottom: 64px;
+  line-height: 130px;
+  margin: 0;
+  padding-bottom: 16px;
 }
 
 .slide-title__up {
@@ -433,18 +434,18 @@ body {
   font-family: Ubuntu;
   font-size: 24px;
   line-height: 24px;
-  padding-left: 135px;
+  margin: 0;
+  padding-bottom: 37px;
 }
 
 .slide-description {
-  padding-left: 135px;
-  padding-top: 20px;
   width: 656px;
   height: 71px;
   color: #ffffff;
   font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 .slides-main {
@@ -537,8 +538,9 @@ body {
   font-size: 36px;
   font-weight: 500;
   line-height: 47px;
-  margin-top: 614px;
-  padding-left: 62px;
+  position: absolute;
+  bottom: 231px;
+  left: 62px;
 }
 
 .slides-main__subtitle {
@@ -547,14 +549,16 @@ body {
   font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
-  padding-left: 62px;
   width: 261px;
-  margin-top: 27px;
-  margin-bottom: 29px;
+  position: absolute;
+  bottom: 132px;
+  left: 62px;
 }
 
 .slides-main__arrow {
-  padding-left: 62px;
+  position: absolute;
+  bottom: 55px;
+  left: 62px;
 }
 
 input[type="checkbox"] + span {
