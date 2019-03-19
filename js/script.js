@@ -100,7 +100,7 @@ let linkOne = document.querySelector('#link1'),
     logoMed = document.querySelector('#logo-medium'),
     vk = document.querySelector('#vk'),
     inst = document.querySelector('#inst'),
-    phone = document.querySelector('#phone'),
+    phone = document.querySelector('#phone-header'),
     linkPhone = document.querySelector('.links-norm');
 
 jQuery(document).ready(function($) {
@@ -295,6 +295,16 @@ $('.gallery').slick({
 
     ]
   });
+
+$(document).ready(function(){
+    $('#phone').mask("+7 (999) 999-99-99");
+    $('#phone2').mask("+7 (999) 999-99-99");
+    $('#phone3').mask("+7 (999) 999-99-99");
+    $('#phone4').mask("+7 (999) 999-99-99");
+    $('#phone5').mask("+7 (999) 999-99-99");
+});
+
+
 
 //   56.009763, 92.878585
 // ymaps.ready(function () {

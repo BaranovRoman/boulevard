@@ -248,7 +248,7 @@ body {
 .form {
   position: absolute;
   bottom: 93px;
-  left: 1414px;
+  right: 8%;
   width: 443px;
   height: 336px;
   border-radius: 7px;
@@ -261,10 +261,6 @@ body {
   padding-top: 22px;
   text-align: left;
   margin-left: 42px;
-}
-
-.form input[type='text'] {
-  padding-left: 10px;
 }
 
 .form__label {
@@ -363,7 +359,80 @@ body {
           transform: translateY(-2px);
 }
 
+nav {
+  padding-left: 0;
+  padding-bottom: 85px;
+  margin: 0;
+}
+
+nav span {
+  display: inline-block;
+  margin-right: 46px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 7px 12px 8px 12px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 46px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 7px 12px 8px 12px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #e2007c;
+  font-family: "Ubuntu";
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 7px 12px 8px 12px;
+  text-decoration: none;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.nav-active {
+  text-decoration: none;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #e2007c;
+  font-family: "Ubuntu";
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 7px 12px 8px 12px;
+  text-decoration: none;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.nav-active:hover {
+  -webkit-transform: none;
+          transform: none;
+  cursor: default;
+}
+
+.nav-top {
+  padding-left: 135px;
+  padding-top: 215px;
+}
+
 .slide {
+  position: relative;
   text-align: left;
 }
 
@@ -373,12 +442,6 @@ body {
   bottom: 93px;
 }
 
-.slide-menu {
-  padding-left: 0;
-  padding-bottom: 85px;
-  margin: 0;
-}
-
 .slide-menu__up {
   padding-left: 135px;
   padding-top: 215px;
@@ -386,7 +449,7 @@ body {
 
 .slide-menu__item {
   display: inline-block;
-  padding-right: 46px;
+  margin-right: 46px;
   color: #ffffff;
   font-family: Ubuntu;
   font-size: 24px;
@@ -395,16 +458,29 @@ body {
   opacity: 0.9;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 7px 12px 8px 12px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 .slide-menu__item:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #e2007c;
+  font-family: "Ubuntu";
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 7px 12px 8px 12px;
+  text-decoration: none;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .slide-menu__item a {
   color: #fff;
+}
+
+.slide-menu__item a:hover {
+  color: #e2007c;
+  text-decoration: none;
 }
 
 .slide-title {
@@ -676,15 +752,6 @@ input[type="checkbox"] + span:checked {
 .links-norm {
   color: #ffffff;
   text-decoration: none;
-}
-
-.not-under {
-  text-decoration: none;
-}
-
-.not-under:hover {
-  -webkit-transform: none;
-          transform: none;
 }
 
 .action {

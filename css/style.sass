@@ -164,7 +164,7 @@ body
 .form
     position: absolute
     bottom: 93px
-    left: 1414px
+    right: 8%
     width: 443px
     height: 336px
     border-radius: 7px
@@ -175,7 +175,13 @@ body
         text-align: left
         margin-left: 42px
     input[type='text']
-        padding-left: 10px
+        // padding-left: 10px
+        &:required
+            // outline: 0px
+    input[type='tel']
+        // padding-left: 10px
+        &:required
+            // outline: none
     &__label
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
         color: #ffffff
@@ -242,22 +248,74 @@ body
         line-height: 18px
         border: 0px
         transform: translateY(-2px)
+nav
+    padding-left: 0
+    padding-bottom: 85px
+    margin: 0
+    span
+        display: inline-block
+        margin-right: 46px
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 24px
+        line-height: 30px
+        text-decoration: underline
+        opacity: 0.9
+        transition: 0.3s
+        padding: 7px 12px 8px 12px
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0)
+    a
+        display: inline-block
+        margin-right: 46px
+        color: #ffffff
+        font-family: Ubuntu
+        font-size: 24px
+        line-height: 30px
+        text-decoration: underline
+        opacity: 0.9
+        transition: 0.3s
+        padding: 7px 12px 8px 12px
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0)
+        &:hover
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+            color: #e2007c
+            font-family: "Ubuntu"
+            border-radius: 3px
+            background-color: rgba(0,0,0,0.7)
+            padding: 7px 12px 8px 12px
+            text-decoration: none
+            transition: all 0.35s
+.nav
+    &-active
+        text-decoration: none
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3)
+        color: #e2007c
+        font-family: "Ubuntu"
+        border-radius: 3px
+        background-color: rgba(0,0,0,0.7)
+        padding: 7px 12px 8px 12px
+        text-decoration: none
+        transition: all 0.35s
+        &:hover
+            transform: none
+            cursor: default
+    &-top
+        padding-left: 135px
+        padding-top: 215px
 .slide
+    position: relative
     text-align: left
     &-left
         position: absolute
         left: 135px
         bottom: 93px
     &-menu
-        padding-left: 0
-        padding-bottom: 85px
-        margin: 0
-        &__up
-            padding-left: 135px
-            padding-top: 215px
-        &__item
-            display: inline-block
-            padding-right: 46px
+        &__up                       //
+            padding-left: 135px     //
+            padding-top: 215px      //
+        &__item                     //
+            display: inline-block   //
+            margin-right: 46px
             color: #ffffff
             font-family: Ubuntu
             font-size: 24px
@@ -265,11 +323,22 @@ body
             text-decoration: underline
             opacity: 0.9
             transition: 0.3s
+            padding: 7px 12px 8px 12px
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0)
             &:hover
-                opacity: 1
-                transform: scale(1.1)
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
+                color: #e2007c
+                font-family: "Ubuntu"
+                border-radius: 3px
+                background-color: rgba(0,0,0,0.7)
+                padding: 7px 12px 8px 12px
+                text-decoration: none
+                transition: all 0.35s
             a
                 color: #fff
+                &:hover
+                    color: #e2007c
+                    text-decoration: none
     &-title
         position: relative
         color: #ffffff
@@ -452,10 +521,7 @@ input[type="checkbox"] + span
 .links-norm
     color: #ffffff
     text-decoration: none
-.not-under
-    text-decoration: none
-    &:hover
-        transform: none
+
 .action
     position: relative
     &::after
