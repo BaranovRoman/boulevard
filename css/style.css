@@ -26,8 +26,9 @@ body {
 .menu {
   position: fixed;
   top: 54px;
-  left: 28.75%;
+  left: calc(50% - 130px);
   z-index: 1;
+  padding-left: 0;
 }
 
 .menu li {
@@ -148,8 +149,6 @@ body {
 }
 
 .logo-lg {
-  position: absolute;
-  left: 50%;
   z-index: 1;
   -webkit-transition: ease 0.05s;
   transition: ease 0.05s;

@@ -1,13 +1,15 @@
 let logoMd = document.querySelector('.logo-md'),
     menuMd = document.querySelector('.menu-md'),
-    logoLg = document.querySelector('.logo-lg');
-
+    logoLg = document.querySelector('.logo-lg'), 
+    menuMain = document.querySelector('.menu');
 let func = function(index, nextIndex, direction) {
     if (nextIndex !== 1) {
+        menuMain.style.left = "28.75%"
         logoMd.style.display = "block";
         menuMd.style.display = "block";
         logoLg.style.display = "none";
     } else if (nextIndex == 1) {
+        menuMain.style.left = "calc(50% - 130px)"
         logoMd.style.display = "none";
         menuMd.style.display = "none";
         logoLg.style.display = "block";
