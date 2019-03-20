@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Ubuntu;
+  color: #fff;
 }
 
 .section {
@@ -11,7 +13,6 @@ body {
 .menu-active {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #e2007c !important;
-  font-family: "Ubuntu";
   font-size: 18px;
   font-weight: 500;
   border-radius: 18px;
@@ -38,8 +39,7 @@ body {
 
 .menu__link {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-family: "Ubuntu";
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -49,7 +49,6 @@ body {
 .menu__link:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #e2007c;
-  font-family: "Ubuntu";
   font-size: 18px;
   font-weight: 500;
   border-radius: 18px;
@@ -71,7 +70,7 @@ body {
 }
 
 .wrapper {
-  width: 755px;
+  width: 40%;
   height: 100%;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.62)));
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%);
@@ -80,7 +79,7 @@ body {
 
 .wrapper-2 {
   width: 100%;
-  height: 246px;
+  height: 26%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.62)));
   background-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.62) 100%);
   position: fixed;
@@ -164,8 +163,6 @@ body {
 
 .phone {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 18px;
   font-weight: 700;
   display: -webkit-box;
@@ -263,10 +260,25 @@ body {
   margin-left: 42px;
 }
 
+.form input[type='text'] {
+  padding-left: 16px;
+  line-height: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form input[type='tel'] {
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form input[type='tel']:required {
+  outline-color: rgba(0, 0, 0, 0);
+}
+
 .form__label {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 22px;
   padding-top: 16px;
@@ -288,8 +300,6 @@ body {
   width: 138px;
   height: 45px;
   opacity: 0.5;
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 10px;
   line-height: 16px;
   -webkit-transform: translate(10px, -12px);
@@ -298,7 +308,6 @@ body {
 
 .form__agree-check {
   opacity: 0.5;
-  color: #ffffff;
   -webkit-transform: translateY(-22px);
           transform: translateY(-22px);
 }
@@ -323,12 +332,11 @@ body {
 }
 
 .button {
-  color: #ffffff;
-  font-family: "Ubuntu";
   font-size: 16px;
   font-weight: 300;
   line-height: 18px;
   border-radius: 3px;
+  color: #fff;
   background-color: #e2007c;
   border: 0px;
 }
@@ -349,8 +357,6 @@ body {
 .button-sub {
   width: 172px;
   height: 48px;
-  color: #ffffff;
-  font-family: "Ubuntu";
   font-size: 16px;
   font-weight: 300;
   line-height: 18px;
@@ -365,26 +371,10 @@ nav {
   margin: 0;
 }
 
-nav span {
-  display: inline-block;
-  margin-right: 46px;
-  color: #ffffff;
-  font-family: Ubuntu;
-  font-size: 24px;
-  line-height: 30px;
-  text-decoration: underline;
-  opacity: 0.9;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 7px 12px 8px 12px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0);
-}
-
 nav a {
   display: inline-block;
   margin-right: 46px;
-  color: #ffffff;
-  font-family: Ubuntu;
+  color: #fff;
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
@@ -398,7 +388,6 @@ nav a {
 nav a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #e2007c;
-  font-family: "Ubuntu";
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 7px 12px 8px 12px;
@@ -411,7 +400,6 @@ nav a:hover {
   text-decoration: none;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   color: #e2007c;
-  font-family: "Ubuntu";
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 7px 12px 8px 12px;
@@ -445,6 +433,10 @@ nav a:hover {
   bottom: 93px;
 }
 
+.slide-left__up {
+  padding: 37px 0px 25px 135px;
+}
+
 .slide-menu__up {
   padding-left: 135px;
   padding-top: 215px;
@@ -453,8 +445,6 @@ nav a:hover {
 .slide-menu__item {
   display: inline-block;
   margin-right: 46px;
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
@@ -468,7 +458,6 @@ nav a:hover {
 .slide-menu__item:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #e2007c;
-  font-family: "Ubuntu";
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 7px 12px 8px 12px;
@@ -487,9 +476,6 @@ nav a:hover {
 }
 
 .slide-title {
-  position: relative;
-  color: #ffffff;
-  font-family: "Ubuntu";
   font-size: 126px;
   font-weight: 500;
   line-height: 130px;
@@ -500,16 +486,12 @@ nav a:hover {
 .slide-title__up {
   padding-left: 127px;
   margin: 0px;
-  color: #ffffff;
-  font-family: "Ubuntu";
   font-size: 76px;
   font-weight: 500;
   line-height: 90px;
 }
 
 .slide-subtitle {
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 24px;
   line-height: 24px;
   margin: 0;
@@ -518,12 +500,11 @@ nav a:hover {
 
 .slide-description {
   width: 656px;
-  height: 71px;
-  color: #ffffff;
-  font-family: Ubuntu;
+  max-height: 71px;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+  overflow: hidden;
 }
 
 .slides-main {
@@ -604,7 +585,6 @@ nav a:hover {
 }
 
 .slides-main__title {
-  color: #ffffff;
   height: 98px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,7 +592,6 @@ nav a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-family: "Ubuntu";
   font-size: 36px;
   font-weight: 500;
   line-height: 47px;
@@ -622,9 +601,7 @@ nav a:hover {
 }
 
 .slides-main__subtitle {
-  color: #ffffff;
   height: 72px;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
   width: 261px;
@@ -664,8 +641,6 @@ input[type="checkbox"] + span:checked {
 .news-item__title {
   width: 322px;
   height: auto;
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 24px;
   line-height: 29px;
   padding-top: 28px;
@@ -676,8 +651,6 @@ input[type="checkbox"] + span:checked {
 .news-item__description {
   width: 322px;
   height: 71px;
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
@@ -692,8 +665,6 @@ input[type="checkbox"] + span:checked {
 .schedule-description {
   width: 734px;
   height: 24px;
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 20px;
   line-height: 24px;
   padding-left: 132px;
@@ -709,16 +680,12 @@ input[type="checkbox"] + span:checked {
   padding-bottom: 31px;
   width: 93px;
   height: 19px;
-  color: #ffffff;
-  font-family: "Ubuntu";
   font-style: italic;
   font-size: 16px;
   font-weight: 300;
 }
 
 .table td {
-  color: #ffffff;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
   padding-right: 30px;
@@ -752,7 +719,7 @@ input[type="checkbox"] + span:checked {
 }
 
 .links-norm {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -764,7 +731,6 @@ input[type="checkbox"] + span:checked {
   content: 'Акция';
   display: block;
   color: #e2007c;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 24px;
   width: 84px;
@@ -795,7 +761,6 @@ input[type="checkbox"] + span:checked {
 .table-map td {
   width: 104px;
   color: #000000;
-  font-family: Ubuntu;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
@@ -810,7 +775,6 @@ input[type="checkbox"] + span:checked {
 .address {
   width: 171px;
   color: #000000;
-  font-family: "Ubuntu";
   font-size: 24px;
   font-weight: 300;
   line-height: 34px;
@@ -831,7 +795,6 @@ input[type="checkbox"] + span:checked {
 .lunch {
   width: 171px;
   color: #000000;
-  font-family: "Ubuntu";
   font-size: 24px;
   font-weight: 300;
   line-height: 34px;
@@ -842,7 +805,7 @@ input[type="checkbox"] + span:checked {
   right: 0px;
   bottom: 300px;
   border: 0px;
-  width: 960px;
+  width: 50vw;
   height: 2px;
   background-color: #e0e0e0;
 }
@@ -871,7 +834,6 @@ input[type="checkbox"] + span:checked {
 
 .map-form__sub {
   color: #000000;
-  font-family: "Ubuntu";
   font-size: 24px;
   font-weight: 300;
   line-height: 34px;
@@ -889,7 +851,6 @@ input[type="checkbox"] + span:checked {
   padding-left: 10px;
   border: 0px;
   font-size: 22px;
-  font-family: "Ubuntu";
   margin-top: 27px;
   margin-right: 24px;
 }
