@@ -25,7 +25,7 @@ body {
 .menu {
   position: fixed;
   top: 54px;
-  left: 552px;
+  left: 28.75%;
   z-index: 1;
 }
 
@@ -150,7 +150,7 @@ body {
 
 .logo-lg {
   position: absolute;
-  left: 280px;
+  left: 50%;
   z-index: 1;
   -webkit-transition: ease 0.05s;
   transition: ease 0.05s;
@@ -427,8 +427,11 @@ nav a:hover {
 }
 
 .nav-top {
-  padding-left: 135px;
-  padding-top: 215px;
+  padding: 215px 0px 58px 135px;
+}
+
+.section {
+  position: relative;
 }
 
 .slide {
@@ -496,13 +499,12 @@ nav a:hover {
 
 .slide-title__up {
   padding-left: 127px;
+  margin: 0px;
   color: #ffffff;
   font-family: "Ubuntu";
   font-size: 76px;
-  margin-top: 58px;
   font-weight: 500;
-  line-height: 47px;
-  margin-bottom: 38px;
+  line-height: 90px;
 }
 
 .slide-subtitle {
@@ -666,9 +668,9 @@ input[type="checkbox"] + span:checked {
   font-family: Ubuntu;
   font-size: 24px;
   line-height: 29px;
+  padding-top: 28px;
   padding-bottom: 28px;
-  margin-top: 28px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .news-item__description {
