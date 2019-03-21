@@ -16,42 +16,6 @@ let func = function(index, nextIndex, direction) {
     }
 }
 
-/*
-screenOne = {
-	dom:document.querySelector('.slides-main-1'),
-	x:123,
-	y:123,
-	a:234,
-	b:868,
-	swipe:function(){
-		
-	}
-};
-slides = [];
-slides.push(screenOne);
-
-
-
-screenOne.addEventListener('mouseover', this.swipe());
-screenOne.addEventListener('mouseout', wideIn());
-
-function wideOut(ob){
-	
-}
-function wideIn(){
-	
-}
-_this = this;
-for(let i in slide.slides){
-
-	slide.slides[i].addEventListener('mouseover', _this.slideOut());
-}
-*/
-
-// slide = {
-//     a: slides
-// }
-
 let screenOne = document.querySelector('.slides-main-1'),
     screenTwo = document.querySelector('.slides-main-2'),
     screenThree = document.querySelector('.slides-main-3'),
@@ -65,97 +29,29 @@ slides.push(screenThree);
 slides.push(screenFour);
 slides.push(screenFive);
 
-
+let big = ((100 / slides.length) * 1.5) ,
+    normal = (100 / slides.length),
+    less = ((100 - big) / (slides.length - 1));
 
 for (let i = 0; i < slides.length; i++) {
     slides[i].addEventListener('mouseover', function(){
-        slides[i].style.flex = "0 0 30%";
+        slides[i].style.flex = "0 0 " + big + "%";
         for (let e = 0; e < slides.length; e++) {
             if (e !== i) {
-                slides[e].style.flex = "0 0 17.5%";
+                slides[e].style.flex = "0 0 " + less + "%";
             }
         };
     });
     slides[i].addEventListener('mouseout', function(){
-        slides[i].style.flex = "0 0 20%";
+        slides[i].style.flex = "0 0 " + normal + "%";
         for (let e = 0; e < slides.length; e++) {
             if (e !== i) {
-                slides[e].style.flex = "0 0 20%";
+                slides[e].style.flex = "0 0 " + normal + "%";
             }
         };
     })
 };
 
-// screenOne.addEventListener('mouseover', function() {
-//     screenOne.style.flex = "0 0 30%";
-//     screenTwo.style.flex = "0 0 17.5%";
-//     screenThree.style.flex = "0 0 17.5%";
-//     screenFour.style.flex = "0 0 17.5%";
-//     screenFive.style.flex = "0 0 17.5%";
-// });
-// screenOne.addEventListener('mouseout', function() {
-//     screenOne.style.flex = "0 0 20%";
-//     screenTwo.style.flex = "0 0 20%";
-//     screenThree.style.flex = "0 0 20%";
-//     screenFour.style.flex = "0 0 20%";
-//     screenFive.style.flex = "0 0 20%";
-// });
-// screenTwo.addEventListener('mouseover', function() {
-//     screenOne.style.flex = "0 0 17.5%";
-//     screenTwo.style.flex = "0 0 30%";
-//     screenThree.style.flex = "0 0 17.5%";
-//     screenFour.style.flex = "0 0 17.5%";
-//     screenFive.style.flex = "0 0 17.5%";
-// });
-// screenTwo.addEventListener('mouseout', function() {
-//     screenOne.style.flex = "0 0 20%";
-//     screenTwo.style.flex = "0 0 20%";
-//     screenThree.style.flex = "0 0 20%";
-//     screenFour.style.flex = "0 0 20%";
-//     screenFive.style.flex = "0 0 20%";
-// });
-// screenThree.addEventListener('mouseover', function() {
-//     screenOne.style.flex = "0 0 17.5%";
-//     screenTwo.style.flex = "0 0 17.5%";
-//     screenThree.style.flex = "0 0 30%";
-//     screenFour.style.flex = "0 0 17.5%";
-//     screenFive.style.flex = "0 0 17.5%";
-// });
-// screenThree.addEventListener('mouseout', function() {
-//     screenOne.style.flex = "0 0 20%";
-//     screenTwo.style.flex = "0 0 20%";
-//     screenThree.style.flex = "0 0 20%";
-//     screenFour.style.flex = "0 0 20%";
-//     screenFive.style.flex = "0 0 20%";
-// });
-// screenFour.addEventListener('mouseover', function() {
-//     screenOne.style.flex = "0 0 17.5%";
-//     screenTwo.style.flex = "0 0 17.5%";
-//     screenThree.style.flex = "0 0 17.5%";
-//     screenFour.style.flex = "0 0 30%";
-//     screenFive.style.flex = "0 0 17.5%";
-// });
-// screenFour.addEventListener('mouseout', function() {
-//     screenOne.style.flex = "0 0 20%";
-//     screenTwo.style.flex = "0 0 20%";
-//     screenThree.style.flex = "0 0 20%";
-//     screenFour.style.flex = "0 0 20%";
-//     screenFive.style.flex = "0 0 20%";
-// });
-// screenFive.addEventListener('mouseover', function() {
-//     screenOne.style.flex = "0 0 17.5%";
-//     screenTwo.style.flex = "0 0 17.5%";
-//     screenThree.style.flex = "0 0 17.5%";
-//     screenFour.style.flex = "0 0 17.5%";
-//     screenFive.style.flex = "0 0 30%";
-// });
-// screenFive.addEventListener('mouseout', function() {
-//     screenOne.style.flex = "0 0 20%";
-//     screenTwo.style.flex = "0 0 20%";
-//     screenThree.style.flex = "0 0 20%";
-//     screenFour.style.flex = "0 0 20%";
-//     screenFive.style.flex = "0 0 20%";
-// });
 
 let linkOne = document.querySelector('#link1'),
     linkTwo = document.querySelector('#link2'),
@@ -166,16 +62,43 @@ let linkOne = document.querySelector('#link1'),
     vk = document.querySelector('#vk'),
     inst = document.querySelector('#inst'),
     phone = document.querySelector('#phone-header'),
-    linkPhone = document.querySelector('.links-norm');
+    linkPhone = document.querySelector('.links-norm'),
+    toBlack = function() {
+        linkFive.classList.remove('menu-active');
+        linkTwo.classList.remove('menu-active');
+        linkThree.classList.remove('menu-active');
+        linkFour.classList.remove('menu-active');
+        linkOne.classList.remove('menu-active');
+        linkOne.classList.add('white-hover');
+        linkTwo.classList.add('white-hover');
+        linkThree.classList.add('white-hover');
+        linkFour.classList.add('white-hover');
+        linkFive.classList.add('white-hover');
+        logoMed.src = 'img/icons/logo-pink.png';
+        vk.src = 'img/icons/vk-black.png';
+        inst.src = 'img/icons/inst-black.png';
+        phone.src = 'img/icons/phone-pink.png';
+        linkPhone.style.color = "black";
+    },
+    toWhite = function() {
+        logoMed.src = 'img/icons/logo-md.png';
+        vk.src = 'img/icons/vk.png';
+        inst.src = 'img/icons/inst.png';
+        phone.src = 'img/icons/phone.png';
+        linkOne.classList.remove('white-hover');
+        linkTwo.classList.remove('white-hover');
+        linkThree.classList.remove('white-hover');
+        linkFour.classList.remove('white-hover');
+        linkFive.classList.remove('white-hover');
+        linkPhone.style.color = "white";
+    }
 
 jQuery(document).ready(function($) {
     $("#fullpage").fullpage({
         anchors: ['', '1page', '2page', '3page', '4page', '5page', 'mappage'],
-        sectionsColor: ['#777','#888','#999','#a8a8a8','#aeaeae','#dedede','#ffffff'],
+        sectionsColor: ['#fefefe','#fefefe','#fefefe','#fefefe','#fefefe','#fefefe','#ffffff'],
         menu: '#menu',
-        navigation: false,
-        navigationTooltips: ['Вверх','Спорт-бар','Боулинг','Караоке','Ресторан "Веранда"','Бар "Туман"', 'Карта'],
-        slidesNavigation:false,
+        slidesNavigation: false,
         controlArrows: false,
         autoScrolling: true,
         verticalCentered: false,
@@ -187,96 +110,37 @@ jQuery(document).ready(function($) {
                 linkThree.classList.remove('menu-active');
                 linkFour.classList.remove('menu-active');
                 linkFive.classList.remove('menu-active');
-                logoMed.src = 'img/icons/logo-md.png';
-                vk.src = 'img/icons/vk.png';
-                inst.src = 'img/icons/inst.png';
-                phone.src = 'img/icons/phone.png';
-                linkOne.classList.remove('white-hover');
-                linkTwo.classList.remove('white-hover');
-                linkThree.classList.remove('white-hover');
-                linkFour.classList.remove('white-hover');
-                linkFive.classList.remove('white-hover');
-                linkPhone.style.color = "white";
+                toWhite();
             } else if (index == '2page'){
                 linkTwo.classList.add('menu-active');
                 linkOne.classList.remove('menu-active');
                 linkThree.classList.remove('menu-active');
                 linkFour.classList.remove('menu-active');
                 linkFive.classList.remove('menu-active');
-                logoMed.src = 'img/icons/logo-md.png';
-                vk.src = 'img/icons/vk.png';
-                inst.src = 'img/icons/inst.png';
-                phone.src = 'img/icons/phone.png';
-                linkOne.classList.remove('white-hover');
-                linkTwo.classList.remove('white-hover');
-                linkThree.classList.remove('white-hover');
-                linkFour.classList.remove('white-hover');
-                linkFive.classList.remove('white-hover');
-                linkPhone.style.color = "white";
+                toWhite();
             } else if (index == '3page'){
                 linkThree.classList.add('menu-active');
                 linkTwo.classList.remove('menu-active');
                 linkOne.classList.remove('menu-active');
                 linkFour.classList.remove('menu-active');
                 linkFive.classList.remove('menu-active');
-                logoMed.src = 'img/icons/logo-md.png';
-                vk.src = 'img/icons/vk.png';
-                inst.src = 'img/icons/inst.png';
-                phone.src = 'img/icons/phone.png';
-                linkOne.classList.remove('white-hover');
-                linkTwo.classList.remove('white-hover');
-                linkThree.classList.remove('white-hover');
-                linkFour.classList.remove('white-hover');
-                linkFive.classList.remove('white-hover');
-                linkPhone.style.color = "white";
+                toWhite();
             } else if (index == '4page'){
                 linkFour.classList.add('menu-active');
                 linkTwo.classList.remove('menu-active');
                 linkThree.classList.remove('menu-active');
                 linkOne.classList.remove('menu-active');
                 linkFive.classList.remove('menu-active');
-                logoMed.src = 'img/icons/logo-md.png';
-                vk.src = 'img/icons/vk.png';
-                inst.src = 'img/icons/inst.png';
-                phone.src = 'img/icons/phone.png';
-                linkOne.classList.remove('white-hover');
-                linkTwo.classList.remove('white-hover');
-                linkThree.classList.remove('white-hover');
-                linkFour.classList.remove('white-hover');
-                linkFive.classList.remove('white-hover');
-                linkPhone.style.color = "white";
+                toWhite();
             } else if (index == '5page'){
                 linkFive.classList.add('menu-active');
                 linkTwo.classList.remove('menu-active');
                 linkThree.classList.remove('menu-active');
                 linkFour.classList.remove('menu-active');
                 linkOne.classList.remove('menu-active');
-                logoMed.src = 'img/icons/logo-md.png';
-                vk.src = 'img/icons/vk.png';
-                inst.src = 'img/icons/inst.png';
-                phone.src = 'img/icons/phone.png';
-                linkOne.classList.remove('white-hover');
-                linkTwo.classList.remove('white-hover');
-                linkThree.classList.remove('white-hover');
-                linkFour.classList.remove('white-hover');
-                linkFive.classList.remove('white-hover');
-                linkPhone.style.color = "white";
+                toWhite();
             } else if (index == 'mappage'){
-                linkFive.classList.remove('menu-active');
-                linkTwo.classList.remove('menu-active');
-                linkThree.classList.remove('menu-active');
-                linkFour.classList.remove('menu-active');
-                linkOne.classList.remove('menu-active');
-                linkOne.classList.add('white-hover');
-                linkTwo.classList.add('white-hover');
-                linkThree.classList.add('white-hover');
-                linkFour.classList.add('white-hover');
-                linkFive.classList.add('white-hover');
-                logoMed.src = 'img/icons/logo-pink.png';
-                vk.src = 'img/icons/vk-black.png';
-                inst.src = 'img/icons/inst-black.png';
-                phone.src = 'img/icons/phone-pink.png';
-                linkPhone.style.color = "black";
+                toBlack();
             }
         }
 });
@@ -308,11 +172,11 @@ gallery.appendChild(div)                            //запихиваю див 
 
 $(function() {
  $(".fancybox").fancybox({
-    cyclic: true
+    cyclic: true                                    //fancybox
  });
 });
 
-$('.gallery').slick({
+$('.gallery').slick({                               //Slick-slider
     dots: false,
     infinite: false,
     speed: 300,
@@ -361,39 +225,10 @@ $('.gallery').slick({
     ]
   });
 
-$(document).ready(function(){
-    $('#phone').mask("+7 (999) 999-99-99");
-    $('#phone2').mask("+7 (999) 999-99-99");
-    $('#phone3').mask("+7 (999) 999-99-99");
-    $('#phone4').mask("+7 (999) 999-99-99");
-    $('#phone5').mask("+7 (999) 999-99-99");
+$(document).ready(function(){                          //inputMask
+    $('#phone').mask("+7 (999) 999-99-99");            //inputMask
+    $('#phone2').mask("+7 (999) 999-99-99");           //inputMask
+    $('#phone3').mask("+7 (999) 999-99-99");           //inputMask
+    $('#phone4').mask("+7 (999) 999-99-99");           //inputMask
+    $('#phone5').mask("+7 (999) 999-99-99");           //inputMask
 });
-
-
-
-//   56.009763, 92.878585
-// ymaps.ready(function () {
-//     var myMap = new ymaps.Map('map', {
-//             center: [56.009763, 92.878585],
-//             zoom: 17
-//         }, {
-//             searchControlProvider: 'yandex#search'
-//         }),
-
-//         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-//             '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-//         ),
-
-//         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-//             hintContent: 'Собственный значок метки',
-//             balloonContent: 'Это красивая метка'
-//         }, {
-//             iconLayout: 'default#image',
-//             iconImageHref: 'img/map/marker.png',
-//             iconImageSize: [30, 42],
-//             iconImageOffset: [-5, -38]
-//         });
-
-//     myMap.geoObjects
-//         .add(myPlacemark);
-// });

@@ -25,7 +25,7 @@ body {
 
 .menu {
   position: fixed;
-  top: 20px;
+  top: 45px;
   left: calc(50% - 130px);
   z-index: 1;
   padding-left: 0;
@@ -33,9 +33,7 @@ body {
 
 .menu li {
   display: inline-block;
-  margin-right: 46px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  margin-right: 20px;
 }
 
 .menu__link {
@@ -45,6 +43,8 @@ body {
   font-weight: 500;
   text-decoration: none;
   padding: 7px 12px 8px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu__link:hover {
@@ -107,6 +107,32 @@ body {
 .wrapper-mini:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0)));
   background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%);
+}
+
+.wrapper-mini h3 {
+  height: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 47px;
+  position: absolute;
+  bottom: 189px;
+  left: 62px;
+}
+
+.wrapper-mini p {
+  height: 72px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 261px;
+  position: absolute;
+  bottom: 112px;
+  left: 62px;
 }
 
 .sport {
@@ -243,8 +269,8 @@ body {
 
 .form {
   position: absolute;
-  bottom: 93px;
-  right: 8%;
+  bottom: 73px;
+  right: 3.5%;
   width: 443px;
   height: 336px;
   border-radius: 7px;
@@ -254,7 +280,7 @@ body {
 }
 
 .form form {
-  padding-top: 22px;
+  padding-top: 38px;
   text-align: left;
   margin-left: 42px;
 }
@@ -264,6 +290,7 @@ body {
   line-height: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 11px;
 }
 
 .form input[type='tel'] {
@@ -366,7 +393,7 @@ body {
 
 nav {
   padding-left: 0;
-  padding-bottom: 85px;
+  padding-bottom: 34px;
   margin: 0;
 }
 
@@ -414,7 +441,7 @@ nav a:hover {
 }
 
 .nav-top {
-  padding: 215px 0px 58px 135px;
+  padding: 205px 0px 49px 120px;
 }
 
 .section {
@@ -428,12 +455,39 @@ nav a:hover {
 
 .slide-left {
   position: absolute;
-  left: 135px;
-  bottom: 93px;
+  left: 127px;
+  bottom: 88px;
 }
 
 .slide-left__up {
   padding: 37px 0px 25px 135px;
+}
+
+.slide-left h2 {
+  font-size: 126px;
+  font-weight: 500;
+  line-height: 130px;
+  margin: 0;
+  padding-bottom: 26px;
+}
+
+.slide-left h3 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 37px;
+  font-weight: 400;
+  padding-left: 8px;
+}
+
+.slide-left p {
+  width: 656px;
+  max-height: 71px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 8px;
 }
 
 .slide-menu__up {
@@ -474,36 +528,12 @@ nav a:hover {
   text-decoration: none;
 }
 
-.slide-title {
-  font-size: 126px;
-  font-weight: 500;
-  line-height: 130px;
-  margin: 0;
-  padding-bottom: 16px;
-}
-
 .slide-title__up {
-  padding-left: 127px;
+  padding-left: 124px;
   margin: 0px;
   font-size: 76px;
   font-weight: 500;
   line-height: 90px;
-}
-
-.slide-subtitle {
-  font-size: 24px;
-  line-height: 24px;
-  margin: 0;
-  padding-bottom: 37px;
-}
-
-.slide-description {
-  width: 656px;
-  max-height: 71px;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
-  overflow: hidden;
 }
 
 .slides-main {
@@ -583,35 +613,9 @@ nav a:hover {
   transition: all 0.5s;
 }
 
-.slides-main__title {
-  height: 98px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 47px;
-  position: absolute;
-  bottom: 231px;
-  left: 62px;
-}
-
-.slides-main__subtitle {
-  height: 72px;
-  font-size: 16px;
-  line-height: 24px;
-  width: 261px;
-  position: absolute;
-  bottom: 132px;
-  left: 62px;
-}
-
 .slides-main__arrow {
   position: absolute;
-  bottom: 55px;
+  bottom: 53px;
   left: 62px;
 }
 
@@ -637,7 +641,7 @@ input[type="checkbox"] + span:checked {
   padding-right: 69px;
 }
 
-.news-item__title {
+.news-item h3 {
   width: 322px;
   height: auto;
   font-size: 24px;
@@ -645,10 +649,11 @@ input[type="checkbox"] + span:checked {
   padding-top: 28px;
   padding-bottom: 28px;
   margin: 0;
+  font-weight: 400;
 }
 
-.news-item__description {
-  width: 322px;
+.news-item p {
+  max-width: 322px;
   height: 71px;
   font-size: 16px;
   line-height: 24px;
