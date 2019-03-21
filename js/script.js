@@ -16,83 +16,146 @@ let func = function(index, nextIndex, direction) {
     }
 }
 
+/*
+screenOne = {
+	dom:document.querySelector('.slides-main-1'),
+	x:123,
+	y:123,
+	a:234,
+	b:868,
+	swipe:function(){
+		
+	}
+};
+slides = [];
+slides.push(screenOne);
+
+
+
+screenOne.addEventListener('mouseover', this.swipe());
+screenOne.addEventListener('mouseout', wideIn());
+
+function wideOut(ob){
+	
+}
+function wideIn(){
+	
+}
+_this = this;
+for(let i in slide.slides){
+
+	slide.slides[i].addEventListener('mouseover', _this.slideOut());
+}
+*/
+
+// slide = {
+//     a: slides
+// }
 
 let screenOne = document.querySelector('.slides-main-1'),
     screenTwo = document.querySelector('.slides-main-2'),
     screenThree = document.querySelector('.slides-main-3'),
     screenFour = document.querySelector('.slides-main-4'),
-    screenFive = document.querySelector('.slides-main-5')
+    screenFive = document.querySelector('.slides-main-5');
 
-screenOne.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 30%";
-    screenTwo.style.flex = "0 0 17.5%";
-    screenThree.style.flex = "0 0 17.5%";
-    screenFour.style.flex = "0 0 17.5%";
-    screenFive.style.flex = "0 0 17.5%";
-});
-screenOne.addEventListener('mouseout', function() {
-    screenOne.style.flex = "0 0 20%";
-    screenTwo.style.flex = "0 0 20%";
-    screenThree.style.flex = "0 0 20%";
-    screenFour.style.flex = "0 0 20%";
-    screenFive.style.flex = "0 0 20%";
-});
-screenTwo.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 17.5%";
-    screenTwo.style.flex = "0 0 30%";
-    screenThree.style.flex = "0 0 17.5%";
-    screenFour.style.flex = "0 0 17.5%";
-    screenFive.style.flex = "0 0 17.5%";
-});
-screenTwo.addEventListener('mouseout', function() {
-    screenOne.style.flex = "0 0 20%";
-    screenTwo.style.flex = "0 0 20%";
-    screenThree.style.flex = "0 0 20%";
-    screenFour.style.flex = "0 0 20%";
-    screenFive.style.flex = "0 0 20%";
-});
-screenThree.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 17.5%";
-    screenTwo.style.flex = "0 0 17.5%";
-    screenThree.style.flex = "0 0 30%";
-    screenFour.style.flex = "0 0 17.5%";
-    screenFive.style.flex = "0 0 17.5%";
-});
-screenThree.addEventListener('mouseout', function() {
-    screenOne.style.flex = "0 0 20%";
-    screenTwo.style.flex = "0 0 20%";
-    screenThree.style.flex = "0 0 20%";
-    screenFour.style.flex = "0 0 20%";
-    screenFive.style.flex = "0 0 20%";
-});
-screenFour.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 17.5%";
-    screenTwo.style.flex = "0 0 17.5%";
-    screenThree.style.flex = "0 0 17.5%";
-    screenFour.style.flex = "0 0 30%";
-    screenFive.style.flex = "0 0 17.5%";
-});
-screenFour.addEventListener('mouseout', function() {
-    screenOne.style.flex = "0 0 20%";
-    screenTwo.style.flex = "0 0 20%";
-    screenThree.style.flex = "0 0 20%";
-    screenFour.style.flex = "0 0 20%";
-    screenFive.style.flex = "0 0 20%";
-});
-screenFive.addEventListener('mouseover', function() {
-    screenOne.style.flex = "0 0 17.5%";
-    screenTwo.style.flex = "0 0 17.5%";
-    screenThree.style.flex = "0 0 17.5%";
-    screenFour.style.flex = "0 0 17.5%";
-    screenFive.style.flex = "0 0 30%";
-});
-screenFive.addEventListener('mouseout', function() {
-    screenOne.style.flex = "0 0 20%";
-    screenTwo.style.flex = "0 0 20%";
-    screenThree.style.flex = "0 0 20%";
-    screenFour.style.flex = "0 0 20%";
-    screenFive.style.flex = "0 0 20%";
-});
+let slides = [];
+slides.push(screenOne);
+slides.push(screenTwo);
+slides.push(screenThree);
+slides.push(screenFour);
+slides.push(screenFive);
+
+
+
+for (let i = 0; i < slides.length; i++) {
+    slides[i].addEventListener('mouseover', function(){
+        slides[i].style.flex = "0 0 30%";
+        for (let e = 0; e < slides.length; e++) {
+            if (e !== i) {
+                slides[e].style.flex = "0 0 17.5%";
+            }
+        };
+    });
+    slides[i].addEventListener('mouseout', function(){
+        slides[i].style.flex = "0 0 20%";
+        for (let e = 0; e < slides.length; e++) {
+            if (e !== i) {
+                slides[e].style.flex = "0 0 20%";
+            }
+        };
+    })
+};
+
+// screenOne.addEventListener('mouseover', function() {
+//     screenOne.style.flex = "0 0 30%";
+//     screenTwo.style.flex = "0 0 17.5%";
+//     screenThree.style.flex = "0 0 17.5%";
+//     screenFour.style.flex = "0 0 17.5%";
+//     screenFive.style.flex = "0 0 17.5%";
+// });
+// screenOne.addEventListener('mouseout', function() {
+//     screenOne.style.flex = "0 0 20%";
+//     screenTwo.style.flex = "0 0 20%";
+//     screenThree.style.flex = "0 0 20%";
+//     screenFour.style.flex = "0 0 20%";
+//     screenFive.style.flex = "0 0 20%";
+// });
+// screenTwo.addEventListener('mouseover', function() {
+//     screenOne.style.flex = "0 0 17.5%";
+//     screenTwo.style.flex = "0 0 30%";
+//     screenThree.style.flex = "0 0 17.5%";
+//     screenFour.style.flex = "0 0 17.5%";
+//     screenFive.style.flex = "0 0 17.5%";
+// });
+// screenTwo.addEventListener('mouseout', function() {
+//     screenOne.style.flex = "0 0 20%";
+//     screenTwo.style.flex = "0 0 20%";
+//     screenThree.style.flex = "0 0 20%";
+//     screenFour.style.flex = "0 0 20%";
+//     screenFive.style.flex = "0 0 20%";
+// });
+// screenThree.addEventListener('mouseover', function() {
+//     screenOne.style.flex = "0 0 17.5%";
+//     screenTwo.style.flex = "0 0 17.5%";
+//     screenThree.style.flex = "0 0 30%";
+//     screenFour.style.flex = "0 0 17.5%";
+//     screenFive.style.flex = "0 0 17.5%";
+// });
+// screenThree.addEventListener('mouseout', function() {
+//     screenOne.style.flex = "0 0 20%";
+//     screenTwo.style.flex = "0 0 20%";
+//     screenThree.style.flex = "0 0 20%";
+//     screenFour.style.flex = "0 0 20%";
+//     screenFive.style.flex = "0 0 20%";
+// });
+// screenFour.addEventListener('mouseover', function() {
+//     screenOne.style.flex = "0 0 17.5%";
+//     screenTwo.style.flex = "0 0 17.5%";
+//     screenThree.style.flex = "0 0 17.5%";
+//     screenFour.style.flex = "0 0 30%";
+//     screenFive.style.flex = "0 0 17.5%";
+// });
+// screenFour.addEventListener('mouseout', function() {
+//     screenOne.style.flex = "0 0 20%";
+//     screenTwo.style.flex = "0 0 20%";
+//     screenThree.style.flex = "0 0 20%";
+//     screenFour.style.flex = "0 0 20%";
+//     screenFive.style.flex = "0 0 20%";
+// });
+// screenFive.addEventListener('mouseover', function() {
+//     screenOne.style.flex = "0 0 17.5%";
+//     screenTwo.style.flex = "0 0 17.5%";
+//     screenThree.style.flex = "0 0 17.5%";
+//     screenFour.style.flex = "0 0 17.5%";
+//     screenFive.style.flex = "0 0 30%";
+// });
+// screenFive.addEventListener('mouseout', function() {
+//     screenOne.style.flex = "0 0 20%";
+//     screenTwo.style.flex = "0 0 20%";
+//     screenThree.style.flex = "0 0 20%";
+//     screenFour.style.flex = "0 0 20%";
+//     screenFive.style.flex = "0 0 20%";
+// });
 
 let linkOne = document.querySelector('#link1'),
     linkTwo = document.querySelector('#link2'),

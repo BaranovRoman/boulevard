@@ -853,4 +853,39 @@ input[type="checkbox"] + span:checked {
   margin-top: 27px;
   margin-right: 24px;
 }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .logo-lg {
+    width: 240px;
+  }
+  .menu {
+    left: calc(50% - 120px);
+  }
+  .menu li {
+    display: inline-block;
+    margin-right: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .menu__link {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 7px 12px 8px 12px;
+  }
+  .menu__link:hover {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #e2007c;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 18px;
+    background-color: #000000;
+    padding: 7px 12px 8px 12px;
+    text-decoration: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+}
 /*# sourceMappingURL=style.css.map */
