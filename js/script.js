@@ -3,13 +3,23 @@ let logoMd = document.querySelector('.logo-md'),
     logoLg = document.querySelector('.logo-lg'), 
     menuMain = document.querySelector('.menu');
 let func = function(index, nextIndex, direction) {
-    if (nextIndex !== 1) {
-        menuMain.style.left = "28.75%"
+    if (nextIndex !== 1 && window.innerWidth > 1400) {
+        menuMain.style.left = "28.75%";
         logoMd.style.display = "block";
         menuMd.style.display = "block";
         logoLg.style.display = "none";
     } else if (nextIndex == 1) {
-        menuMain.style.left = "calc(50% - 130px)"
+        menuMain.style.left = "calc(50% - 75px)";
+        logoMd.style.display = "none";
+        menuMd.style.display = "none";
+        logoLg.style.display = "block";
+    } else if (nextIndex !== 1 && window.innerWidth > 1200 && window.innerWidth < 1400) {
+        menuMain.style.left = "22%";
+        logoMd.style.display = "block";
+        menuMd.style.display = "block";
+        logoLg.style.display = "none";
+    } else if (nextIndex == 1 && window.innerWidth > 1200 && window.innerWidth < 1400) {
+        menuMain.style.left = "calc(50% - 75px)";
         logoMd.style.display = "none";
         menuMd.style.display = "none";
         logoLg.style.display = "block";
