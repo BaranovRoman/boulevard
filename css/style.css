@@ -279,6 +279,12 @@ body {
   transition: 0.2s;
 }
 
+#logo-medium:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .form {
   position: absolute;
   bottom: 73px;
@@ -627,23 +633,26 @@ input[type="checkbox"] + span:checked {
   height: auto;
   font-size: 24px;
   line-height: 29px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 28px;
   font-weight: 400;
+  max-height: 58px;
+  overflow: hidden;
 }
 
 .news-item p {
   max-width: 322px;
+  max-height: 72px;
   height: 71px;
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
   padding-left: 0px;
+  overflow: hidden;
 }
 
 .news-item__img {
-  padding-top: 24px;
+  padding-top: 40px;
   width: 319px;
   height: 186px;
 }
@@ -717,8 +726,8 @@ input[type="checkbox"] + span:checked {
   background-color: #f1e312;
   text-align: center;
   position: absolute;
-  top: 14px;
-  right: 80px;
+  top: 27px;
+  left: 225px;
 }
 
 .map-wrapper {
@@ -871,6 +880,9 @@ input[type="checkbox"] + span:checked {
     width: 190px;
     left: 40px;
   }
+  .table-slide p {
+    padding-left: 0px;
+  }
   .slides-main__arrow {
     left: 40px;
   }
@@ -887,6 +899,19 @@ input[type="checkbox"] + span:checked {
   }
   .nav-top {
     padding: 155px 0px 30px 100px;
+  }
+  .wrapper-3 h2 {
+    padding-left: 100px;
+    margin: 0px;
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .wrapper-3 p {
+    width: 734px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 108px;
   }
   .slide-left {
     position: absolute;
@@ -924,19 +949,6 @@ input[type="checkbox"] + span:checked {
     width: 556px;
     font-size: 16px;
     line-height: 24px;
-  }
-  .wrapper-3 h2 {
-    padding-left: 100px;
-    margin: 0px;
-    font-size: 56px;
-    line-height: 60px;
-  }
-  .wrapper-3 p {
-    width: 734px;
-    height: 24px;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 108px;
   }
   .phone {
     font-size: 16px;
@@ -1145,9 +1157,6 @@ input[type="checkbox"] + span:checked {
   .table-row__white {
     background-color: rgba(231, 231, 231, 0.2);
     z-index: 0;
-  }
-  .table-slide p {
-    padding-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

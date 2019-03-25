@@ -105,7 +105,7 @@ let linkOne = document.querySelector('#link1'),
 
 jQuery(document).ready(function($) {
     $("#fullpage").fullpage({
-        anchors: ['', '1page', '2page', '3page', '4page', '5page', 'mappage'],
+        anchors: ['main', '1page', '2page', '3page', '4page', '5page', 'mappage'],
         sectionsColor: ['#fefefe','#fefefe','#fefefe','#fefefe','#fefefe','#fefefe','#ffffff'],
         menu: '#menu',
         slidesNavigation: false,
@@ -182,7 +182,14 @@ gallery.appendChild(div)                            //запихиваю див 
 
 $(function() {
  $(".fancybox").fancybox({
-    cyclic: true                                    //fancybox
+    prevEffect		: 'none',
+		nextEffect		: 'none',
+        closeBtn		: false,
+        hash     : false,
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}                                    //fancybox
  });
 });
 
@@ -192,7 +199,7 @@ $('.gallery').slick({                               //Slick-slider
     speed: 300,
     rows: 2,
     slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToScroll: 5,
     arrows: false,
     responsive: [
     {
@@ -235,6 +242,46 @@ $('.gallery').slick({                               //Slick-slider
     ]
   });
 
+$('.news').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                }
+            
+                ]
+   });
+
+
+
+
 $(document).ready(function(){                          //inputMask
     $('#phone').mask("+7 (999) 999-99-99");            //inputMask
     $('#phone2').mask("+7 (999) 999-99-99");           //inputMask
@@ -242,3 +289,4 @@ $(document).ready(function(){                          //inputMask
     $('#phone4').mask("+7 (999) 999-99-99");           //inputMask
     $('#phone5').mask("+7 (999) 999-99-99");           //inputMask
 });
+
